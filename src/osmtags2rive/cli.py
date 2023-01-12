@@ -2,9 +2,10 @@ import argparse
 import json
 import os
 import sys
-import osmtags2rive
+from osmtags2rive import OSMTags2Rive
 
-# from osmtags2rive.osmtags2rive import WikiAsBase2Zip
+
+from .constants import ID_TAGGING_SCHEMA
 
 EXIT_OK = 0  # pylint: disable=invalid-name
 EXIT_ERROR = 1  # pylint: disable=invalid-name
@@ -28,27 +29,24 @@ def main():
         description="Convert openstreetmap/id-tagging-schema to RiveScript",
     )
 
-    # parser.add_argument(
-    #     'integers', metavar='N', type=int, nargs='+',
-    #     help='an integer for the accumulator')
-    # parser.add_argument(
-    #     '-greet', action='store_const', const=True,
-    #     default=False, dest='greet',
-    #     help="Greet Message from Geeks For Geeks.")
-    # parser.add_argument(
-    #     '--sum', dest='accumulate', action='store_const',
-    #     const=sum, default=max,
-    #     help='sum the integers (default: find the max)')
-
-    # added --titles as aliases existing --page-title
-    # parser.add_argument("--page-title", help="Page title of input")
     parser.add_argument(
-        "--titles", "--page-title", help="Page titles of input, Use | as separator"
+        "--language",
+        help="Output language. Example: pt",
+        default="pt",
+    )
+
+    parser.add_argument(
+        "--path-id-tagging-schema",
+        help="Path to a directory with id-tagging-schema",
+        default="./id-tagging-schema",
     )
 
     args = parser.parse_args()
 
+    o2r = OSMTags2Rive(language=args.language, ref_path=args.path_id_tagging_schema)
+
     print(args)
+    print(o2r.output())
 
     return EXIT_ERROR
 

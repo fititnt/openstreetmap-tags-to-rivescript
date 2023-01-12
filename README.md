@@ -12,18 +12,13 @@ pip install git+https://github.com/fititnt/openstreetmap-tags-to-rivescriptt@mai
 ```
 
 ### Fetch cache
-Prepare the cache directory
+
 
 ```bash
+# Prepare the cache directory
 git clone https://github.com/openstreetmap/id-tagging-schema.git ./id-tagging-schema
 
-```
-
-### Run osmtags2rive cli
-Prepare the cache directory
-
-```bash
-osmtags2rive --help
+osmtags2rive --language=pt
 ```
 
 # Disclaimers
