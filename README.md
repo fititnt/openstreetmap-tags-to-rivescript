@@ -8,7 +8,7 @@
 No pip release yet, install from GitHub
 
 ```bash
-pip install git+https://github.com/fititnt/openstreetmap-tags-to-rivescriptt@main
+pip install https://github.com/fititnt/openstreetmap-tags-to-rivescript/archive/main.zip
 ```
 
 ### Fetch cache
