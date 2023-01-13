@@ -20,6 +20,13 @@ git clone https://github.com/openstreetmap/id-tagging-schema.git ./id-tagging-sc
 osmtags2rive --language=pt > brain/osm-tagging-pt.rive
 ```
 
+<!--
+To regenerate again example
+
+osmtags2rive --language=pt > example/brain/osm-tagging-pt.rive
+-->
+
+
 ### Test
 
 #### Python example
