@@ -45,7 +45,7 @@ def main():
 
     o2r = OSMTags2Rive(language=args.language, ref_path=args.path_id_tagging_schema)
 
-    print(args)
+    # print(args)
     print(o2r.output())
 
     return EXIT_ERROR
