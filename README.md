@@ -17,13 +17,15 @@ pip install https://github.com/fititnt/openstreetmap-tags-to-rivescript/archive/
 # Prepare the cache directory
 git clone https://github.com/openstreetmap/id-tagging-schema.git ./id-tagging-schema
 
-osmtags2rive --language=pt > brain/osm-tagging-pt.rive
+osmtags2rive --language=pt > brain/osm-tagging_pt.rive
+osmtags2rive --language=pt --reverse-index > brain/osm-tagging-reverse_pt.rive
 ```
 
 <!--
 To regenerate again example
 
-osmtags2rive --language=pt > example/brain/osm-tagging-pt.rive
+osmtags2rive --language=pt > example/brain/osm-tagging_pt.rive
+osmtags2rive --language=pt --reverse-index > example/brain/osm-tagging-reverse_pt.rive
 -->
 
 
@@ -45,6 +47,7 @@ python shell.py
 
 from rivescript import RiveScript
 
+# bot = RiveScript(utf8=True)
 bot = RiveScript()
 bot.load_directory("./brain")
 bot.sort_replies()

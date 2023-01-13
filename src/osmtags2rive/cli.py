@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 import sys
-from osmtags2rive import OSMTags2Rive
+from osmtags2rive import OSMTags2Rive, OSMTagsReverse2Rive
 
 
 from .constants import ID_TAGGING_SCHEMA
@@ -41,9 +41,20 @@ def main():
         default="./id-tagging-schema",
     )
 
+    parser.add_argument(
+        "--reverse-index",
+        help="Generate inverse index (keywors to tags)",
+        action="store_true",
+    )
+
     args = parser.parse_args()
 
-    o2r = OSMTags2Rive(language=args.language, ref_path=args.path_id_tagging_schema)
+    if args.reverse_index:
+        o2r = OSMTagsReverse2Rive(
+            language=args.language, ref_path=args.path_id_tagging_schema
+        )
+    else:
+        o2r = OSMTags2Rive(language=args.language, ref_path=args.path_id_tagging_schema)
 
     # print(args)
     print(o2r.output())
