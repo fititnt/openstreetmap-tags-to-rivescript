@@ -1,0 +1,51 @@
+! version = 2.0
+
+// Substitutions
+! sub &quot;    = "
+! sub &apos;    = '
+! sub &amp;     = &
+! sub &lt;      = <
+! sub &gt;      = >
+
+// Portugues
+! sub é         = e
+! sub à         = a
+! sub não       = nao
+
+
++ meu nome e *
+- <set name=<formal>>Eu vou lembrar de chamar você de <get name>.
+
++ (qual e|qual|voce sabe) meu nome
+* <get name> != undefined => Sim, seu nome é <get name>!
+- Eu não sei seu nome
+
+
++ google *
+- Google Search: <call>google <star></call>
+
+// Here is the Google search object. We'll cover objects in more
+// depth later in the tutorial.
+> object google javascript
+    var query = escape(args.join(" "));
+    return "<a href=\"http://www.google.com/search?q=" + query + "\">Click Here!</a>";
+< object
+
+> object google python
+    import urllib.parse
+    # print(args)
+    return 'http://www.google.com/search?q=' + urllib.parse.quote(" ".join(args))
+< object
+
++ overpass *
+- Asistente do Overpass: <call>overpass_generico <star></call>
+
+// @see https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard
+// @see https://github.com/tyrasd/overpass-wizard/blob/master/wizard.pegjs
+// exemplo http://overpass-turbo.eu/?w=pub+in+dublin&R
+// @todo teste https://wiki.openstreetmap.org/wiki/Key:amenity
+// @TODO teste https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcafe
+> object overpass_generico python
+    import urllib.parse
+    return 'http://overpass-turbo.eu/?w=' + urllib.parse.quote(" ".join(args))
+< object
