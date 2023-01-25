@@ -71,6 +71,11 @@ class OSMTags2Rive:
             trigger = self._sanitize_trigger(field_key)
             options = self._prepare_response_options_inline(field_val)
 
+            if "label" not in field_val:
+                self._rive.append("")
+                self._rive.append(f"// ERR [{field_key}] {field_val}")
+                continue
+
             self._rive.append("")
             self._rive.append(f"// {field_key}")
             self._rive.append(f"+ {trigger}")

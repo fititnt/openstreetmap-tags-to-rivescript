@@ -17,8 +17,8 @@ pip install https://github.com/fititnt/openstreetmap-tags-to-rivescript/archive/
 # Prepare the cache directory
 git clone https://github.com/openstreetmap/id-tagging-schema.git ./id-tagging-schema
 
-osmtags2rive --language=pt > brain/osm-tagging_pt.rive
-osmtags2rive --language=pt --reverse-index > brain/osm-tagging-reverse_pt.rive
+osmtags2rive --language=pt > example/brain/osm-tagging_pt.rive
+osmtags2rive --language=pt --reverse-index > example/brain/osm-tagging-reverse_pt.rive
 ```
 
 <!--

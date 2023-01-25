@@ -221,6 +221,10 @@
 + animal_shelter
 - OpenStreetMap tag animal_shelter=* def. Animais
 
+// archaeological_site
++ archaeological_site
+- OpenStreetMap tag archaeological_site=* def. Tipo
+
 // architect
 + architect
 - OpenStreetMap tag architect=* def. Arquiteto
@@ -235,7 +239,43 @@
 
 // artwork_type
 + artwork_type
-- OpenStreetMap tag artwork_type=* def. Tipo
+- OpenStreetMap tag artwork_type=* def. Tipo [=bust (Busto); =graffiti (Grafíti); =installation (Instalação artística); =mosaic (Mosaico); =mural (Mural); =painting (Pintura); =relief (Relevo); =sculpture (Escultura); =statue (Estátua)]
+
+// artwork_type=bust
++ artwork_typebust
+- OpenStreetMap tag artwork_type=bust def. Tipo = Busto
+
+// artwork_type=graffiti
++ artwork_typegraffiti
+- OpenStreetMap tag artwork_type=graffiti def. Tipo = Grafíti
+
+// artwork_type=installation
++ artwork_typeinstallation
+- OpenStreetMap tag artwork_type=installation def. Tipo = Instalação artística
+
+// artwork_type=mosaic
++ artwork_typemosaic
+- OpenStreetMap tag artwork_type=mosaic def. Tipo = Mosaico
+
+// artwork_type=mural
++ artwork_typemural
+- OpenStreetMap tag artwork_type=mural def. Tipo = Mural
+
+// artwork_type=painting
++ artwork_typepainting
+- OpenStreetMap tag artwork_type=painting def. Tipo = Pintura
+
+// artwork_type=relief
++ artwork_typerelief
+- OpenStreetMap tag artwork_type=relief def. Tipo = Relevo
+
+// artwork_type=sculpture
++ artwork_typesculpture
+- OpenStreetMap tag artwork_type=sculpture def. Tipo = Escultura
+
+// artwork_type=statue
++ artwork_typestatue
+- OpenStreetMap tag artwork_type=statue def. Tipo = Estátua
 
 // ascent
 + ascent
@@ -303,7 +343,23 @@
 
 // basin
 + basin
-- OpenStreetMap tag basin=* def. Tipo
+- OpenStreetMap tag basin=* def. Tipo [=detention (Retardação); =evaporation (Evaporação); =infiltration (Infiltração); =retention (Retenção)]
+
+// basin=detention
++ basindetention
+- OpenStreetMap tag basin=detention def. Tipo = Retardação
+
+// basin=evaporation
++ basinevaporation
+- OpenStreetMap tag basin=evaporation def. Tipo = Evaporação
+
+// basin=infiltration
++ basininfiltration
+- OpenStreetMap tag basin=infiltration def. Tipo = Infiltração
+
+// basin=retention
++ basinretention
+- OpenStreetMap tag basin=retention def. Tipo = Retenção
 
 // bath/open_air
 + bathopen_air
@@ -427,11 +483,67 @@
 
 // board_type
 + board_type
-- OpenStreetMap tag board_type=* def. Tipo
+- OpenStreetMap tag board_type=* def. Tipo [=art (Arte); =astronomy (Astronomia); =geology (Geologia); =history (História); =nature (Natureza); =notice (Painel informativo); =plants (Plantas); =welcome_sign (Sinal de boas-vindas); =wildlife (Vida selvagem)]
+
+// board_type=art
++ board_typeart
+- OpenStreetMap tag board_type=art def. Tipo = Arte
+
+// board_type=astronomy
++ board_typeastronomy
+- OpenStreetMap tag board_type=astronomy def. Tipo = Astronomia
+
+// board_type=geology
++ board_typegeology
+- OpenStreetMap tag board_type=geology def. Tipo = Geologia
+
+// board_type=history
++ board_typehistory
+- OpenStreetMap tag board_type=history def. Tipo = História
+
+// board_type=nature
++ board_typenature
+- OpenStreetMap tag board_type=nature def. Tipo = Natureza
+
+// board_type=notice
++ board_typenotice
+- OpenStreetMap tag board_type=notice def. Tipo = Painel informativo
+
+// board_type=plants
++ board_typeplants
+- OpenStreetMap tag board_type=plants def. Tipo = Plantas
+
+// board_type=welcome_sign
++ board_typewelcome_sign
+- OpenStreetMap tag board_type=welcome_sign def. Tipo = Sinal de boas-vindas
+
+// board_type=wildlife
++ board_typewildlife
+- OpenStreetMap tag board_type=wildlife def. Tipo = Vida selvagem
 
 // bollard
 + bollard
-- OpenStreetMap tag bollard=* def. Tipo
+- OpenStreetMap tag bollard=* def. Tipo [=fixed (Pilarete fixo); =flexible (Pilarete flexível); =foldable (Pilarete inclinável); =removable (Pilarete removível); =rising (Pilarete de subir e descer)]
+
+// bollard=fixed
++ bollardfixed
+- OpenStreetMap tag bollard=fixed def. Tipo = Pilarete fixo
+
+// bollard=flexible
++ bollardflexible
+- OpenStreetMap tag bollard=flexible def. Tipo = Pilarete flexível
+
+// bollard=foldable
++ bollardfoldable
+- OpenStreetMap tag bollard=foldable def. Tipo = Pilarete inclinável
+
+// bollard=removable
++ bollardremovable
+- OpenStreetMap tag bollard=removable def. Tipo = Pilarete removível
+
+// bollard=rising
++ bollardrising
+- OpenStreetMap tag bollard=rising def. Tipo = Pilarete de subir e descer
 
 // booth
 + booth
@@ -500,14 +612,6 @@
 // building/prefabricated
 + buildingprefabricated
 - OpenStreetMap tag building/prefabricated=* def. Pré-fabricado
-
-// building_area
-+ building_area
-- OpenStreetMap tag building_area=* def. Edifício
-
-// building_area_yes
-+ building_area_yes
-- OpenStreetMap tag building_area_yes=* def. Edifício
 
 // bunker_type
 + bunker_type
@@ -749,37 +853,247 @@
 + covered
 - OpenStreetMap tag covered=* def. Coberto
 
-// covered_no
-+ covered_no
-- OpenStreetMap tag covered_no=* def. Coberto [=no (Não); =undefined (Presumindo que não); =yes (Sim)]
-
-// covered_no=no
-+ covered_nono
-- OpenStreetMap tag covered_no=no def. Coberto = Não
-
-// covered_no=undefined
-+ covered_noundefined
-- OpenStreetMap tag covered_no=undefined def. Coberto = Presumindo que não
-
-// covered_no=yes
-+ covered_noyes
-- OpenStreetMap tag covered_no=yes def. Coberto = Sim
+// ERR [covered_no] {'options': {'no': 'Não', 'undefined': 'Presumindo que não', 'yes': 'Sim'}}
 
 // craft
 + craft
-- OpenStreetMap tag craft=* def. Tipo
+- OpenStreetMap tag craft=* def. Tipo [=agricultural_engines (Mecânico de máquinas agrícolas); =basket_maker (Cesteiro); =beekeeper (Apicultor); =blacksmith (Ferreiro); =boatbuilder (Construtor de barcos); =bookbinder (Encadernador); =brewery (Cervejeiro); =builder (Construtor civil); =carpenter (Carpinteiro); =carpet_layer (Alcatifador); =caterer (Profissional de catering); =chimney_sweeper (Limpa-chaminés); =cleaning (Serviço de limpezas); =clockmaker (Relojoeiro); =confectionery (Confeiteiro); =distillery (Destilador); =dressmaker (Costureiro); =electrician (Eletricista); =electronics_repair (Reparação eletrónica); =floorer (Assentador de chãos); =gardener (Jardineiro); =glaziery (Vidraceiro); =grinding_mill (Moinho); =handicraft (Artesão); =hvac ( Técnico de aquecimento e ventilação); =insulation (Técnico de isolamento térmico); =jeweller (Joalheiro); =key_cutter (Chaveiro); =locksmith (Técnico de fechaduras); =metal_construction (Serralheiro); =oil_mill (Moinho de azeite); =painter (Pintor); =parquet_layer (Técnico de parqué); =photographer (Fotógrafo); =photographic_laboratory (Laboratório fotográfico); =plasterer (Estucador); =plumber (Canalizador); =pottery (Oleiro); =rigger (Mastreador); =roofer (Telhador); =saddler (Seleiro); =sailmaker (Veleiro); =sawmill (Serração); =scaffolder (Técnico de andaimes); =sculptor (Escultor); =shoemaker (Sapateiro); =stonemason (Pedreiro); =tailor (Alfaiate); =tiler (Assentador de tijoleira); =tinsmith (Latoeiro); =upholsterer (Estufador); =watchmaker (Relojoeiro de relógios de pulso); =window_construction (Construção de janelas); =winery (Casa vinícola)]
+
+// craft=agricultural_engines
++ craftagricultural_engines
+- OpenStreetMap tag craft=agricultural_engines def. Tipo = Mecânico de máquinas agrícolas
+
+// craft=basket_maker
++ craftbasket_maker
+- OpenStreetMap tag craft=basket_maker def. Tipo = Cesteiro
+
+// craft=beekeeper
++ craftbeekeeper
+- OpenStreetMap tag craft=beekeeper def. Tipo = Apicultor
+
+// craft=blacksmith
++ craftblacksmith
+- OpenStreetMap tag craft=blacksmith def. Tipo = Ferreiro
+
+// craft=boatbuilder
++ craftboatbuilder
+- OpenStreetMap tag craft=boatbuilder def. Tipo = Construtor de barcos
+
+// craft=bookbinder
++ craftbookbinder
+- OpenStreetMap tag craft=bookbinder def. Tipo = Encadernador
+
+// craft=brewery
++ craftbrewery
+- OpenStreetMap tag craft=brewery def. Tipo = Cervejeiro
+
+// craft=builder
++ craftbuilder
+- OpenStreetMap tag craft=builder def. Tipo = Construtor civil
+
+// craft=carpenter
++ craftcarpenter
+- OpenStreetMap tag craft=carpenter def. Tipo = Carpinteiro
+
+// craft=carpet_layer
++ craftcarpet_layer
+- OpenStreetMap tag craft=carpet_layer def. Tipo = Alcatifador
+
+// craft=caterer
++ craftcaterer
+- OpenStreetMap tag craft=caterer def. Tipo = Profissional de catering
+
+// craft=chimney_sweeper
++ craftchimney_sweeper
+- OpenStreetMap tag craft=chimney_sweeper def. Tipo = Limpa-chaminés
+
+// craft=cleaning
++ craftcleaning
+- OpenStreetMap tag craft=cleaning def. Tipo = Serviço de limpezas
+
+// craft=clockmaker
++ craftclockmaker
+- OpenStreetMap tag craft=clockmaker def. Tipo = Relojoeiro
+
+// craft=confectionery
++ craftconfectionery
+- OpenStreetMap tag craft=confectionery def. Tipo = Confeiteiro
+
+// craft=distillery
++ craftdistillery
+- OpenStreetMap tag craft=distillery def. Tipo = Destilador
+
+// craft=dressmaker
++ craftdressmaker
+- OpenStreetMap tag craft=dressmaker def. Tipo = Costureiro
+
+// craft=electrician
++ craftelectrician
+- OpenStreetMap tag craft=electrician def. Tipo = Eletricista
+
+// craft=electronics_repair
++ craftelectronics_repair
+- OpenStreetMap tag craft=electronics_repair def. Tipo = Reparação eletrónica
+
+// craft=floorer
++ craftfloorer
+- OpenStreetMap tag craft=floorer def. Tipo = Assentador de chãos
+
+// craft=gardener
++ craftgardener
+- OpenStreetMap tag craft=gardener def. Tipo = Jardineiro
+
+// craft=glaziery
++ craftglaziery
+- OpenStreetMap tag craft=glaziery def. Tipo = Vidraceiro
+
+// craft=grinding_mill
++ craftgrinding_mill
+- OpenStreetMap tag craft=grinding_mill def. Tipo = Moinho
+
+// craft=handicraft
++ crafthandicraft
+- OpenStreetMap tag craft=handicraft def. Tipo = Artesão
+
+// craft=hvac
++ crafthvac
+- OpenStreetMap tag craft=hvac def. Tipo =  Técnico de aquecimento e ventilação
+
+// craft=insulation
++ craftinsulation
+- OpenStreetMap tag craft=insulation def. Tipo = Técnico de isolamento térmico
+
+// craft=jeweller
++ craftjeweller
+- OpenStreetMap tag craft=jeweller def. Tipo = Joalheiro
+
+// craft=key_cutter
++ craftkey_cutter
+- OpenStreetMap tag craft=key_cutter def. Tipo = Chaveiro
+
+// craft=locksmith
++ craftlocksmith
+- OpenStreetMap tag craft=locksmith def. Tipo = Técnico de fechaduras
+
+// craft=metal_construction
++ craftmetal_construction
+- OpenStreetMap tag craft=metal_construction def. Tipo = Serralheiro
+
+// craft=oil_mill
++ craftoil_mill
+- OpenStreetMap tag craft=oil_mill def. Tipo = Moinho de azeite
+
+// craft=painter
++ craftpainter
+- OpenStreetMap tag craft=painter def. Tipo = Pintor
+
+// craft=parquet_layer
++ craftparquet_layer
+- OpenStreetMap tag craft=parquet_layer def. Tipo = Técnico de parqué
+
+// craft=photographer
++ craftphotographer
+- OpenStreetMap tag craft=photographer def. Tipo = Fotógrafo
+
+// craft=photographic_laboratory
++ craftphotographic_laboratory
+- OpenStreetMap tag craft=photographic_laboratory def. Tipo = Laboratório fotográfico
+
+// craft=plasterer
++ craftplasterer
+- OpenStreetMap tag craft=plasterer def. Tipo = Estucador
+
+// craft=plumber
++ craftplumber
+- OpenStreetMap tag craft=plumber def. Tipo = Canalizador
+
+// craft=pottery
++ craftpottery
+- OpenStreetMap tag craft=pottery def. Tipo = Oleiro
+
+// craft=rigger
++ craftrigger
+- OpenStreetMap tag craft=rigger def. Tipo = Mastreador
+
+// craft=roofer
++ craftroofer
+- OpenStreetMap tag craft=roofer def. Tipo = Telhador
+
+// craft=saddler
++ craftsaddler
+- OpenStreetMap tag craft=saddler def. Tipo = Seleiro
+
+// craft=sailmaker
++ craftsailmaker
+- OpenStreetMap tag craft=sailmaker def. Tipo = Veleiro
+
+// craft=sawmill
++ craftsawmill
+- OpenStreetMap tag craft=sawmill def. Tipo = Serração
+
+// craft=scaffolder
++ craftscaffolder
+- OpenStreetMap tag craft=scaffolder def. Tipo = Técnico de andaimes
+
+// craft=sculptor
++ craftsculptor
+- OpenStreetMap tag craft=sculptor def. Tipo = Escultor
+
+// craft=shoemaker
++ craftshoemaker
+- OpenStreetMap tag craft=shoemaker def. Tipo = Sapateiro
+
+// craft=stonemason
++ craftstonemason
+- OpenStreetMap tag craft=stonemason def. Tipo = Pedreiro
+
+// craft=tailor
++ crafttailor
+- OpenStreetMap tag craft=tailor def. Tipo = Alfaiate
+
+// craft=tiler
++ crafttiler
+- OpenStreetMap tag craft=tiler def. Tipo = Assentador de tijoleira
+
+// craft=tinsmith
++ crafttinsmith
+- OpenStreetMap tag craft=tinsmith def. Tipo = Latoeiro
+
+// craft=upholsterer
++ craftupholsterer
+- OpenStreetMap tag craft=upholsterer def. Tipo = Estufador
+
+// craft=watchmaker
++ craftwatchmaker
+- OpenStreetMap tag craft=watchmaker def. Tipo = Relojoeiro de relógios de pulso
+
+// craft=window_construction
++ craftwindow_construction
+- OpenStreetMap tag craft=window_construction def. Tipo = Construção de janelas
+
+// craft=winery
++ craftwinery
+- OpenStreetMap tag craft=winery def. Tipo = Casa vinícola
 
 // crane/type
 + cranetype
-- OpenStreetMap tag crane/type=* def. Tipo de grua [=floor-mounted_crane (Grua fixa ao solo); =portal_crane (Grua de ponte rolante); =travel_lift (Grua de elevação de embarcações)]
+- OpenStreetMap tag crane/type=* def. Tipo de grua [=floor-mounted_crane (Grua fixa ao solo); =gantry_crane (Pórtico rolante); =portal_crane (Ponte rolante); =tower_crane (Grua de torre); =travel_lift (Grua de elevação de embarcações)]
 
 // crane/type=floor-mounted_crane
 + cranetypefloormounted_crane
 - OpenStreetMap tag crane/type=floor-mounted_crane def. Tipo de grua = Grua fixa ao solo
 
+// crane/type=gantry_crane
++ cranetypegantry_crane
+- OpenStreetMap tag crane/type=gantry_crane def. Tipo de grua = Pórtico rolante
+
 // crane/type=portal_crane
 + cranetypeportal_crane
-- OpenStreetMap tag crane/type=portal_crane def. Tipo de grua = Grua de ponte rolante
+- OpenStreetMap tag crane/type=portal_crane def. Tipo de grua = Ponte rolante
+
+// crane/type=tower_crane
++ cranetypetower_crane
+- OpenStreetMap tag crane/type=tower_crane def. Tipo de grua = Grua de torre
 
 // crane/type=travel_lift
 + cranetypetravel_lift
@@ -895,11 +1209,15 @@
 
 // crossing
 + crossing
-- OpenStreetMap tag crossing=* def. Tipo [=traffic_signals (Com semáforos); =unmarked (Sem marcas ou semáforos)]
+- OpenStreetMap tag crossing=* def. Tipo [=traffic_signals (Com semáforos); =uncontrolled (Apenas marcas na estrada); =unmarked (Sem marcas ou semáforos)]
 
 // crossing=traffic_signals
 + crossingtraffic_signals
 - OpenStreetMap tag crossing=traffic_signals def. Tipo = Com semáforos
+
+// crossing=uncontrolled
++ crossinguncontrolled
+- OpenStreetMap tag crossing=uncontrolled def. Tipo = Apenas marcas na estrada
 
 // crossing=unmarked
 + crossingunmarked
@@ -1211,15 +1529,11 @@
 
 // cycleway
 + cycleway
-- OpenStreetMap tag cycleway=* def. Vias de bicicleta [=lane (Via normal); =none (Nenhuma); =opposite (Via mista); =opposite_lane (Via em sentido contrário); =separate (Ciclovia mapeada separadamente); =share_busway (Via partilhada com autocarros); =shared_lane (Via partilhada); =track (Trilho de bicicleta)]
+- OpenStreetMap tag cycleway=* def. Vias de bicicleta [=lane ({'description': 'Uma via para bicicletas separada do trânsito automóvel por uma linha pintada'}); =opposite ({'description': 'Uma via para bicicletas com dois sentidos numa rua de sentido único para trânsito automóvel'}); =opposite_lane ({'description': 'Uma via para bicicletas onde o sentido é o oposto do trânsito automóvel'}); =separate ({'description': 'Indica que a ciclovia foi mapeada como geometria separada'}); =share_busway ({'description': 'Uma via para bicicletas partilhada com uma faixa para autocarros'}); =shared_lane ({'description': 'Uma via para bicicletas partilhada com o trânsito automóvel'}); =track ({'description': 'Uma via para bicicletas separada do restante trânsito por uma barreira física'})]
 
 // cycleway=lane
 + cyclewaylane
 - OpenStreetMap tag cycleway=lane def. Vias de bicicleta = Uma via para bicicletas separada do trânsito automóvel por uma linha pintada
-
-// cycleway=none
-+ cyclewaynone
-- OpenStreetMap tag cycleway=none def. Vias de bicicleta = Sem via para bicicletas
 
 // cycleway=opposite
 + cyclewayopposite
@@ -1317,21 +1631,9 @@
 + destinationref
 - OpenStreetMap tag destination/ref=* def. Referências de destino
 
-// destination/ref_oneway
-+ destinationref_oneway
-- OpenStreetMap tag destination/ref_oneway=* def. Referências das estradas de destino
-
 // destination/symbol
 + destinationsymbol
 - OpenStreetMap tag destination/symbol=* def. Símbolos de destino
-
-// destination/symbol_oneway
-+ destinationsymbol_oneway
-- OpenStreetMap tag destination/symbol_oneway=* def. Símbolos de destino
-
-// destination_oneway
-+ destination_oneway
-- OpenStreetMap tag destination_oneway=* def. Destinos
 
 // destination_waterway
 + destination_waterway
@@ -1425,9 +1727,7 @@
 + direction_clockclockwise
 - OpenStreetMap tag direction_clock=clockwise def. Direção = No sentido horário
 
-// direction_point
-+ direction_point
-- OpenStreetMap tag direction_point=* def. Direção (Graus no sentido horário)
+// ERR [direction_point] {'placeholder': '45, 90, 180, 270'}
 
 // direction_vertex
 + direction_vertex
@@ -1444,18 +1744,6 @@
 // direction_vertex=forward
 + direction_vertexforward
 - OpenStreetMap tag direction_vertex=forward def. Direção afetada = Para a frente
-
-// direction_vertex_dual
-+ direction_vertex_dual
-- OpenStreetMap tag direction_vertex_dual=* def. Direção afetada [=backward (Para trás); =forward (Para a frente)]
-
-// direction_vertex_dual=backward
-+ direction_vertex_dualbackward
-- OpenStreetMap tag direction_vertex_dual=backward def. Direção afetada = Para trás
-
-// direction_vertex_dual=forward
-+ direction_vertex_dualforward
-- OpenStreetMap tag direction_vertex_dual=forward def. Direção afetada = Para a frente
 
 // dispensing
 + dispensing
@@ -1548,10 +1836,6 @@
 // ele
 + ele
 - OpenStreetMap tag ele=* def. Elevação (metros)
-
-// ele_node
-+ ele_node
-- OpenStreetMap tag ele_node=* def. Elevação (metros)
 
 // electrified
 + electrified
@@ -1820,10 +2104,6 @@
 // frequency
 + frequency
 - OpenStreetMap tag frequency=* def. Frequência de operação
-
-// frequency_electrified
-+ frequency_electrified
-- OpenStreetMap tag frequency_electrified=* def. Frequência de operação
 
 // from
 + from
@@ -2155,7 +2435,7 @@
 
 // healthcare/speciality
 + healthcarespeciality
-- OpenStreetMap tag healthcare/speciality=* def. Especialidades [=abortion (Aborto); =acupuncture (Acunpunctura); =allergology (Alergias); =anaesthetics (Anestesiologia); =angiology (Angiologia); =anthroposophical (Antroposofia); =applied_kinesiology (Kinesiologia aplicada); =aromatherapy (Aromaterapia); =ayurveda (Ayurveda); =behavior (Terapia comportamental); =biochemistry (Bioquímica); =biology (Biologia); =blood_check (Análises sanguíneas); =cardiology (Cardiologia); =cardiothoracic_surgery (Cirurgia cardiotóracica); =child_psychiatry (Psiquiatria pediátrica); =chiropractic (Quiropraxia); =clinical_pathology (Patologia clínica); =dental_oral_maxillo_facial_surgery (Cirurgia maxilofacial); =depth (Psicologia profunda); =dermatology (Dermatologia); =dermatovenereology (Dermatovenereologia); =diabetology (Diabetologia); =diagnostic_radiology (Imagiologia); =emergency (Traumatologia); =endocrinology (Endocrinologia); =fertility (Fertilidade); =gastroenterology (Gastroenterologia); =general (Medicina geral); =geriatrics (Geriatria); =gynaecology (Obstetrícia e Ginecologia); =haematology (Hematologia); =hepatology (Hepatologia); =herbalism (Herbalismo); =homeopathy (Homeopatia); =humanistic (Psicologia humanista); =hydrotherapy (Hidroterapia); =hypnosis (Hipnose); =infectious_diseases (Doenças infecciosas); =intensive (Cuidados intensivos); =internal (Medicina interna); =naturopathy (Naturopatia); =neonatology (Neonatologia); =nephrology (Nefrologia); =neurology (Neurologia); =neuropsychiatry (Neuropsiquiatria); =neurosurgery (Neurocirurgia); =nuclear (Medicina nuclear); =occupational (Medicina ocupacional); =oncology (Oncologia); =ophthalmology (Oftalmologia); =orthodontics (Ortodontia); =orthopaedics (Cirurgia ortopédica); =osteopathy (Osteopatia); =otolaryngology (Otorrinolaringologia); =paediatric_surgery (Cirurgia pediátrica); =paediatrics (Pediatria); =palliative (Cuidados paliativos); =pathology (Patologia); =physiatry (Fisiatria / Reabilitação); =plastic_surgery (Cirurgia plástica); =podiatry (Podologia); =proctology (Proctologia); =psychiatry (Psiquiatria); =pulmonology (Pulmonologia); =radiology (Radiologia); =radiotherapy (Radioterapia); =reflexology (Reflexologia); =reiki (Reiki); =rheumatology (Reumatologia); =shiatsu (Shiatsu); =stomatology (Estomatologia); =surgery (Cirurgia geral); =systemic (Terapia sistémica); =traditional_chinese_medicine (Medicina tradicional chinesa); =transplant (Transplantes); =trauma (Traumatologia); =tropical (Medicina tropical); =tuina (Tuiná); =unani (Medicina unani); =urology (Urologia); =vaccination (Vacinação); =vascular_surgery (Cirurgia vascular)]
+- OpenStreetMap tag healthcare/speciality=* def. Especialidades [=abortion (Aborto); =acupuncture (Acunpunctura); =allergology (Alergias); =anaesthetics (Anestesiologia); =angiology (Angiologia); =anthroposophical (Antroposofia); =applied_kinesiology (Kinesiologia aplicada); =aromatherapy (Aromaterapia); =ayurveda (Ayurveda); =behavior (Terapia comportamental); =biochemistry (Bioquímica); =biology (Biologia); =blood_check (Análises sanguíneas); =body (Psicoterapia corporal); =cardiology (Cardiologia); =cardiothoracic_surgery (Cirurgia cardiotóracica); =child_psychiatry (Psiquiatria pediátrica); =chiropractic (Quiropraxia); =clinical_pathology (Patologia clínica); =dental_oral_maxillo_facial_surgery (Cirurgia maxilofacial); =depth (Psicologia profunda); =dermatology (Dermatologia); =dermatovenereology (Dermatovenereologia); =diabetology (Diabetologia); =diagnostic_radiology (Imagiologia); =emergency (Traumatologia); =endocrinology (Endocrinologia); =fertility (Fertilidade); =gastroenterology (Gastroenterologia); =general (Medicina geral); =geriatrics (Geriatria); =gynaecology (Obstetrícia e Ginecologia); =haematology (Hematologia); =hepatology (Hepatologia); =herbalism (Herbalismo); =homeopathy (Homeopatia); =humanistic (Psicologia humanista); =hydrotherapy (Hidroterapia); =hypnosis (Hipnose); =infectious_diseases (Doenças infecciosas); =intensive (Cuidados intensivos); =internal (Medicina interna); =naturopathy (Naturopatia); =neonatology (Neonatologia); =nephrology (Nefrologia); =neurology (Neurologia); =neuropsychiatry (Neuropsiquiatria); =neurosurgery (Neurocirurgia); =nuclear (Medicina nuclear); =occupational (Medicina ocupacional); =oncology (Oncologia); =ophthalmology (Oftalmologia); =orthodontics (Ortodontia); =orthopaedics (Cirurgia ortopédica); =osteopathy (Osteopatia); =otolaryngology (Otorrinolaringologia); =paediatric_surgery (Cirurgia pediátrica); =paediatrics (Pediatria); =palliative (Cuidados paliativos); =pathology (Patologia); =physiatry (Fisiatria / Reabilitação); =plastic_surgery (Cirurgia plástica); =podiatry (Podologia); =proctology (Proctologia); =psychiatry (Psiquiatria); =pulmonology (Pulmonologia); =radiology (Radiologia); =radiotherapy (Radioterapia); =reflexology (Reflexologia); =reiki (Reiki); =rheumatology (Reumatologia); =shiatsu (Shiatsu); =stomatology (Estomatologia); =surgery (Cirurgia geral); =systemic (Terapia sistémica); =traditional_chinese_medicine (Medicina tradicional chinesa); =transplant (Transplantes); =trauma (Traumatologia); =tropical (Medicina tropical); =tuina (Tuiná); =unani (Medicina unani); =urology (Urologia); =vaccination (Vacinação); =vascular_surgery (Cirurgia vascular)]
 
 // healthcare/speciality=abortion
 + healthcarespecialityabortion
@@ -2208,6 +2488,10 @@
 // healthcare/speciality=blood_check
 + healthcarespecialityblood_check
 - OpenStreetMap tag healthcare/speciality=blood_check def. Especialidades = Análises sanguíneas
+
+// healthcare/speciality=body
++ healthcarespecialitybody
+- OpenStreetMap tag healthcare/speciality=body def. Especialidades = Psicoterapia corporal
 
 // healthcare/speciality=cardiology
 + healthcarespecialitycardiology
@@ -2653,17 +2937,7 @@
 + incline
 - OpenStreetMap tag incline=* def. Inclinação
 
-// incline_steps
-+ incline_steps
-- OpenStreetMap tag incline_steps=* def. Inclinação [=down (Para baixo); =up (Para cima)]
-
-// incline_steps=down
-+ incline_stepsdown
-- OpenStreetMap tag incline_steps=down def. Inclinação = Para baixo
-
-// incline_steps=up
-+ incline_stepsup
-- OpenStreetMap tag incline_steps=up def. Inclinação = Para cima
+// ERR [incline_steps] {'options': {'down': 'Para baixo', 'up': 'Para cima'}}
 
 // indoor
 + indoor
@@ -2692,10 +2966,6 @@
 // intermittent
 + intermittent
 - OpenStreetMap tag intermittent=* def. Intermitente
-
-// intermittent_yes
-+ intermittent_yes
-- OpenStreetMap tag intermittent_yes=* def. Intermitente
 
 // internet_access
 + internet_access
@@ -2837,26 +3107,6 @@
 + leaf_cyclesemi_evergreen
 - OpenStreetMap tag leaf_cycle=semi_evergreen def. Ciclo de folhagem = Semipersistente
 
-// leaf_cycle_singular
-+ leaf_cycle_singular
-- OpenStreetMap tag leaf_cycle_singular=* def. Ciclo de folhagem [=deciduous (Caduca); =evergreen (Persistente); =semi_deciduous (Semicaduca); =semi_evergreen (Semipersistente)]
-
-// leaf_cycle_singular=deciduous
-+ leaf_cycle_singulardeciduous
-- OpenStreetMap tag leaf_cycle_singular=deciduous def. Ciclo de folhagem = Caduca
-
-// leaf_cycle_singular=evergreen
-+ leaf_cycle_singularevergreen
-- OpenStreetMap tag leaf_cycle_singular=evergreen def. Ciclo de folhagem = Persistente
-
-// leaf_cycle_singular=semi_deciduous
-+ leaf_cycle_singularsemi_deciduous
-- OpenStreetMap tag leaf_cycle_singular=semi_deciduous def. Ciclo de folhagem = Semicaduca
-
-// leaf_cycle_singular=semi_evergreen
-+ leaf_cycle_singularsemi_evergreen
-- OpenStreetMap tag leaf_cycle_singular=semi_evergreen def. Ciclo de folhagem = Semipersistente
-
 // leaf_type
 + leaf_type
 - OpenStreetMap tag leaf_type=* def. Tipo de folha [=broadleaved (Largas); =leafless (Sem folha); =mixed (Variadas); =needleleaved (Agulhas)]
@@ -2879,19 +3129,7 @@
 
 // leaf_type_singular
 + leaf_type_singular
-- OpenStreetMap tag leaf_type_singular=* def. Tipo de folha [=broadleaved (Larga); =leafless (Sem folhas); =needleleaved (Agulhas)]
-
-// leaf_type_singular=broadleaved
-+ leaf_type_singularbroadleaved
-- OpenStreetMap tag leaf_type_singular=broadleaved def. Tipo de folha = Larga
-
-// leaf_type_singular=leafless
-+ leaf_type_singularleafless
-- OpenStreetMap tag leaf_type_singular=leafless def. Tipo de folha = Sem folhas
-
-// leaf_type_singular=needleleaved
-+ leaf_type_singularneedleleaved
-- OpenStreetMap tag leaf_type_singular=needleleaved def. Tipo de folha = Agulhas
+- OpenStreetMap tag leaf_type_singular=* def. Tipo de folha
 
 // leisure
 + leisure
@@ -2937,21 +3175,7 @@
 + location
 - OpenStreetMap tag location=* def. Localização
 
-// location_pool
-+ location_pool
-- OpenStreetMap tag location_pool=* def. Localização [=indoor (Interior); =outdoor (Exterior); =roof (Telhado)]
-
-// location_pool=indoor
-+ location_poolindoor
-- OpenStreetMap tag location_pool=indoor def. Localização = Interior
-
-// location_pool=outdoor
-+ location_pooloutdoor
-- OpenStreetMap tag location_pool=outdoor def. Localização = Exterior
-
-// location_pool=roof
-+ location_poolroof
-- OpenStreetMap tag location_pool=roof def. Localização = Telhado
+// ERR [location_pool] {'options': {'indoor': 'Interior', 'outdoor': 'Exterior', 'roof': 'Telhado'}}
 
 // lock
 + lock
@@ -3028,10 +3252,6 @@
 // maxweight
 + maxweight
 - OpenStreetMap tag maxweight=* def. Peso máximo
-
-// maxweight_bridge
-+ maxweight_bridge
-- OpenStreetMap tag maxweight_bridge=* def. Peso máximo
 
 // maxwidth
 + maxwidth
@@ -3281,29 +3501,7 @@
 + onewaybicycle
 - OpenStreetMap tag oneway/bicycle=* def. Sentido único (bicicletas)
 
-// oneway_yes
-+ oneway_yes
-- OpenStreetMap tag oneway_yes=* def. Sentido único? [=alternating (Alternado); =no (Não); =reversible (Reversível); =undefined (Presumindo que sim); =yes (Sim)]
-
-// oneway_yes=alternating
-+ oneway_yesalternating
-- OpenStreetMap tag oneway_yes=alternating def. Sentido único? = Alternado
-
-// oneway_yes=no
-+ oneway_yesno
-- OpenStreetMap tag oneway_yes=no def. Sentido único? = Não
-
-// oneway_yes=reversible
-+ oneway_yesreversible
-- OpenStreetMap tag oneway_yes=reversible def. Sentido único? = Reversível
-
-// oneway_yes=undefined
-+ oneway_yesundefined
-- OpenStreetMap tag oneway_yes=undefined def. Sentido único? = Presumindo que sim
-
-// oneway_yes=yes
-+ oneway_yesyes
-- OpenStreetMap tag oneway_yes=yes def. Sentido único? = Sim
+// ERR [oneway_yes] {'options': {'alternating': 'Alternado', 'no': 'Não', 'reversible': 'Reversível', 'undefined': 'Presumindo que sim', 'yes': 'Sim'}}
 
 // openfire
 + openfire
@@ -3439,15 +3637,7 @@
 
 // parking_entrance
 + parking_entrance
-- OpenStreetMap tag parking_entrance=* def. Tipo [=multi-storey (Multiandares); =underground (Subterrâneo)]
-
-// parking_entrance=multi-storey
-+ parking_entrancemultistorey
-- OpenStreetMap tag parking_entrance=multi-storey def. Tipo = Multiandares
-
-// parking_entrance=underground
-+ parking_entranceunderground
-- OpenStreetMap tag parking_entrance=underground def. Tipo = Subterrâneo
+- OpenStreetMap tag parking_entrance=* def. Tipo
 
 // parking_space
 + parking_space
@@ -3661,93 +3851,11 @@
 + pistedifficultynovice
 - OpenStreetMap tag piste/difficulty=novice def. Dificuldade = Novato
 
-// piste/difficulty_downhill
-+ pistedifficulty_downhill
-- OpenStreetMap tag piste/difficulty_downhill=* def. Dificuldade [=advanced (Avançado (diamante negro)); =easy (Fácil (círculo verde)); =expert (Especialista (diamante negro duplo)); =extreme (Extremo (requer equipamento de escalada)); =freeride (Prática livre (fora de pista)); =intermediate (Intermediário (quadrado azul)); =novice (Novato (instrutivo))]
+// ERR [piste/difficulty_downhill] {'options': {'advanced': 'Avançado (diamante negro)', 'easy': 'Fácil (círculo verde)', 'expert': 'Especialista (diamante negro duplo)', 'extreme': 'Extremo (requer equipamento de escalada)', 'freeride': 'Prática livre (fora de pista)', 'intermediate': 'Intermediário (quadrado azul)', 'novice': 'Novato (instrutivo)'}, 'placeholder': 'Fácil, intermédio, avançado...'}
 
-// piste/difficulty_downhill=advanced
-+ pistedifficulty_downhilladvanced
-- OpenStreetMap tag piste/difficulty_downhill=advanced def. Dificuldade = Avançado (diamante negro)
+// ERR [piste/difficulty_nordic] {'options': {'advanced': 'Avançado - secção estreita, íngreme ou gelada, curva acentuada', 'easy': 'Fácil - colinas suaves, secção íngreme curta', 'expert': 'Especialista - terreno perigoso por perto', 'intermediate': 'Intermédio - secção íngreme', 'novice': 'Novato - plano, nenhum esforço necessário'}, 'placeholder': 'Fácil, intermédio, avançado...'}
 
-// piste/difficulty_downhill=easy
-+ pistedifficulty_downhilleasy
-- OpenStreetMap tag piste/difficulty_downhill=easy def. Dificuldade = Fácil (círculo verde)
-
-// piste/difficulty_downhill=expert
-+ pistedifficulty_downhillexpert
-- OpenStreetMap tag piste/difficulty_downhill=expert def. Dificuldade = Especialista (diamante negro duplo)
-
-// piste/difficulty_downhill=extreme
-+ pistedifficulty_downhillextreme
-- OpenStreetMap tag piste/difficulty_downhill=extreme def. Dificuldade = Extremo (requer equipamento de escalada)
-
-// piste/difficulty_downhill=freeride
-+ pistedifficulty_downhillfreeride
-- OpenStreetMap tag piste/difficulty_downhill=freeride def. Dificuldade = Prática livre (fora de pista)
-
-// piste/difficulty_downhill=intermediate
-+ pistedifficulty_downhillintermediate
-- OpenStreetMap tag piste/difficulty_downhill=intermediate def. Dificuldade = Intermediário (quadrado azul)
-
-// piste/difficulty_downhill=novice
-+ pistedifficulty_downhillnovice
-- OpenStreetMap tag piste/difficulty_downhill=novice def. Dificuldade = Novato (instrutivo)
-
-// piste/difficulty_nordic
-+ pistedifficulty_nordic
-- OpenStreetMap tag piste/difficulty_nordic=* def. Dificuldade [=advanced (Avançado - secção estreita, íngreme ou gelada, curva acentuada); =easy (Fácil - colinas suaves, secção íngreme curta); =expert (Especialista - terreno perigoso por perto); =intermediate (Intermédio - secção íngreme); =novice (Novato - plano, nenhum esforço necessário)]
-
-// piste/difficulty_nordic=advanced
-+ pistedifficulty_nordicadvanced
-- OpenStreetMap tag piste/difficulty_nordic=advanced def. Dificuldade = Avançado - secção estreita, íngreme ou gelada, curva acentuada
-
-// piste/difficulty_nordic=easy
-+ pistedifficulty_nordiceasy
-- OpenStreetMap tag piste/difficulty_nordic=easy def. Dificuldade = Fácil - colinas suaves, secção íngreme curta
-
-// piste/difficulty_nordic=expert
-+ pistedifficulty_nordicexpert
-- OpenStreetMap tag piste/difficulty_nordic=expert def. Dificuldade = Especialista - terreno perigoso por perto
-
-// piste/difficulty_nordic=intermediate
-+ pistedifficulty_nordicintermediate
-- OpenStreetMap tag piste/difficulty_nordic=intermediate def. Dificuldade = Intermédio - secção íngreme
-
-// piste/difficulty_nordic=novice
-+ pistedifficulty_nordicnovice
-- OpenStreetMap tag piste/difficulty_nordic=novice def. Dificuldade = Novato - plano, nenhum esforço necessário
-
-// piste/difficulty_skitour
-+ pistedifficulty_skitour
-- OpenStreetMap tag piste/difficulty_skitour=* def. Dificuldade [=advanced (Avançado - S: 40-45° de inclinação); =easy (Fácil - WS: 30-35° de inclinação); =expert (Especialista - SS: 45–50° de inclinação); =extreme (Extremo - EX:> 55° de inclinação); =freeride (Prática livre - AS: 50–55° de inclinação); =intermediate (Intermediário - ZS: 35-40° de inclinação); =novice (Novato - L: <30° de inclinação)]
-
-// piste/difficulty_skitour=advanced
-+ pistedifficulty_skitouradvanced
-- OpenStreetMap tag piste/difficulty_skitour=advanced def. Dificuldade = Avançado - S: 40-45° de inclinação
-
-// piste/difficulty_skitour=easy
-+ pistedifficulty_skitoureasy
-- OpenStreetMap tag piste/difficulty_skitour=easy def. Dificuldade = Fácil - WS: 30-35° de inclinação
-
-// piste/difficulty_skitour=expert
-+ pistedifficulty_skitourexpert
-- OpenStreetMap tag piste/difficulty_skitour=expert def. Dificuldade = Especialista - SS: 45–50° de inclinação
-
-// piste/difficulty_skitour=extreme
-+ pistedifficulty_skitourextreme
-- OpenStreetMap tag piste/difficulty_skitour=extreme def. Dificuldade = Extremo - EX:> 55° de inclinação
-
-// piste/difficulty_skitour=freeride
-+ pistedifficulty_skitourfreeride
-- OpenStreetMap tag piste/difficulty_skitour=freeride def. Dificuldade = Prática livre - AS: 50–55° de inclinação
-
-// piste/difficulty_skitour=intermediate
-+ pistedifficulty_skitourintermediate
-- OpenStreetMap tag piste/difficulty_skitour=intermediate def. Dificuldade = Intermediário - ZS: 35-40° de inclinação
-
-// piste/difficulty_skitour=novice
-+ pistedifficulty_skitournovice
-- OpenStreetMap tag piste/difficulty_skitour=novice def. Dificuldade = Novato - L: <30° de inclinação
+// ERR [piste/difficulty_skitour] {'options': {'advanced': 'Avançado - S: 40-45° de inclinação', 'easy': 'Fácil - WS: 30-35° de inclinação', 'expert': 'Especialista - SS: 45–50° de inclinação', 'extreme': 'Extremo - EX:> 55° de inclinação', 'freeride': 'Prática livre - AS: 50–55° de inclinação', 'intermediate': 'Intermediário - ZS: 35-40° de inclinação', 'novice': 'Novato - L: <30° de inclinação'}, 'placeholder': 'Fácil, intermédio, avançado...'}
 
 // piste/grooming
 + pistegrooming
@@ -3777,57 +3885,11 @@
 + pistegroomingskating
 - OpenStreetMap tag piste/grooming=skating def. Preparação = Patinagem 
 
-// piste/grooming_downhill
-+ pistegrooming_downhill
-- OpenStreetMap tag piste/grooming_downhill=* def. Preparação [=backcountry (Fora de pista - sem preparação); =classic (Clássico); =mogul (Mogul)]
+// ERR [piste/grooming_downhill] {'options': {'backcountry': 'Fora de pista - sem preparação', 'classic': 'Clássico', 'mogul': 'Mogul'}}
 
-// piste/grooming_downhill=backcountry
-+ pistegrooming_downhillbackcountry
-- OpenStreetMap tag piste/grooming_downhill=backcountry def. Preparação = Fora de pista - sem preparação
+// ERR [piste/grooming_hike] {'options': {'backcountry': 'Fora de pista - raquetes de neve', 'classic': 'Clássico - caminhada de inverno'}}
 
-// piste/grooming_downhill=classic
-+ pistegrooming_downhillclassic
-- OpenStreetMap tag piste/grooming_downhill=classic def. Preparação = Clássico
-
-// piste/grooming_downhill=mogul
-+ pistegrooming_downhillmogul
-- OpenStreetMap tag piste/grooming_downhill=mogul def. Preparação = Mogul
-
-// piste/grooming_hike
-+ pistegrooming_hike
-- OpenStreetMap tag piste/grooming_hike=* def. Preparação [=backcountry (Fora de pista - raquetes de neve); =classic (Clássico - caminhada de inverno)]
-
-// piste/grooming_hike=backcountry
-+ pistegrooming_hikebackcountry
-- OpenStreetMap tag piste/grooming_hike=backcountry def. Preparação = Fora de pista - raquetes de neve
-
-// piste/grooming_hike=classic
-+ pistegrooming_hikeclassic
-- OpenStreetMap tag piste/grooming_hike=classic def. Preparação = Clássico - caminhada de inverno
-
-// piste/grooming_nordic
-+ pistegrooming_nordic
-- OpenStreetMap tag piste/grooming_nordic=* def. Preparação [=backcountry (Fora de pista - sem preparação); =classic (Clássico); =classic+skating (Clássico e patinagem); =scooter (Mota de neve); =skating (Patinagem)]
-
-// piste/grooming_nordic=backcountry
-+ pistegrooming_nordicbackcountry
-- OpenStreetMap tag piste/grooming_nordic=backcountry def. Preparação = Fora de pista - sem preparação
-
-// piste/grooming_nordic=classic
-+ pistegrooming_nordicclassic
-- OpenStreetMap tag piste/grooming_nordic=classic def. Preparação = Clássico
-
-// piste/grooming_nordic=classic+skating
-+ pistegrooming_nordicclassicskating
-- OpenStreetMap tag piste/grooming_nordic=classic+skating def. Preparação = Clássico e patinagem
-
-// piste/grooming_nordic=scooter
-+ pistegrooming_nordicscooter
-- OpenStreetMap tag piste/grooming_nordic=scooter def. Preparação = Mota de neve
-
-// piste/grooming_nordic=skating
-+ pistegrooming_nordicskating
-- OpenStreetMap tag piste/grooming_nordic=skating def. Preparação = Patinagem
+// ERR [piste/grooming_nordic] {'options': {'backcountry': 'Fora de pista - sem preparação', 'classic': 'Clássico', 'classic+skating': 'Clássico e patinagem', 'scooter': 'Mota de neve', 'skating': 'Patinagem'}}
 
 // piste/type
 + pistetype
@@ -4587,7 +4649,7 @@
 
 // seamark/rescue_station/category
 + seamarkrescue_stationcategory
-- OpenStreetMap tag seamark/rescue_station/category=* def. Equipamento salva-vidas [=aircraft (Aeronave); =first_aid (Primeiros socorros); =hovercraft (Hovercraft); =lifeboat (Barco salva-vidas (em terra)); =lifeboat_on_mooring (Barco salva-vidas (atracado)); =radio (Estação de rádio); =refuge_intertidal (Refúgio intermareal); =seaplane (Hidroavião)]
+- OpenStreetMap tag seamark/rescue_station/category=* def. Equipamento salva-vidas [=aircraft (Aeronave); =first_aid (Primeiros socorros); =hovercraft (Hovercraft); =lifeboat (Barco salva-vidas (em terra)); =lifeboat_on_mooring (Barco salva-vidas (atracado)); =radio (Estação de rádio); =refuge_intertidal (Refúgio intermareal); =refuge_shipwrecked (Abrigo para náufragos); =seaplane (Hidroavião); =tug (Rebocador de salvamento)]
 
 // seamark/rescue_station/category=aircraft
 + seamarkrescue_stationcategoryaircraft
@@ -4617,9 +4679,17 @@
 + seamarkrescue_stationcategoryrefuge_intertidal
 - OpenStreetMap tag seamark/rescue_station/category=refuge_intertidal def. Equipamento salva-vidas = Refúgio intermareal
 
+// seamark/rescue_station/category=refuge_shipwrecked
++ seamarkrescue_stationcategoryrefuge_shipwrecked
+- OpenStreetMap tag seamark/rescue_station/category=refuge_shipwrecked def. Equipamento salva-vidas = Abrigo para náufragos
+
 // seamark/rescue_station/category=seaplane
 + seamarkrescue_stationcategoryseaplane
 - OpenStreetMap tag seamark/rescue_station/category=seaplane def. Equipamento salva-vidas = Hidroavião
+
+// seamark/rescue_station/category=tug
++ seamarkrescue_stationcategorytug
+- OpenStreetMap tag seamark/rescue_station/category=tug def. Equipamento salva-vidas = Rebocador de salvamento
 
 // seamark/type
 + seamarktype
@@ -4725,6 +4795,10 @@
 + shelter_type
 - OpenStreetMap tag shelter_type=* def. Tipo
 
+// shoes
++ shoes
+- OpenStreetMap tag shoes=* def. Tipo de calçado
+
 // shop
 + shop
 - OpenStreetMap tag shop=* def. Tipo
@@ -4756,10 +4830,6 @@
 // site
 + site
 - OpenStreetMap tag site=* def. Tipo
-
-// site_type
-+ site_type
-- OpenStreetMap tag site_type=* def. Tipo de sítio
 
 // smoking
 + smoking
@@ -4831,7 +4901,15 @@
 
 // social_facility
 + social_facility
-- OpenStreetMap tag social_facility=* def. Tipo
+- OpenStreetMap tag social_facility=* def. Tipo [=ambulatory_care (Cuidado ambulatório); =food_bank (Banco alimentar)]
+
+// social_facility=ambulatory_care
++ social_facilityambulatory_care
+- OpenStreetMap tag social_facility=ambulatory_care def. Tipo = Cuidado ambulatório
+
+// social_facility=food_bank
++ social_facilityfood_bank
+- OpenStreetMap tag social_facility=food_bank def. Tipo = Banco alimentar
 
 // social_facility_for
 + social_facility_for
@@ -4923,7 +5001,7 @@
 
 // sport_racing_motor
 + sport_racing_motor
-- OpenStreetMap tag sport_racing_motor=* def. Desportos [=karting (Karting); =motocross (Motocrosse); =motor (Desporto motorizados)]
+- OpenStreetMap tag sport_racing_motor=* def. Desportos [=karting (Karting); =motocross (Motocrosse); =motor (Desporto motorizados); =speedway (Speedway)]
 
 // sport_racing_motor=karting
 + sport_racing_motorkarting
@@ -4936,6 +5014,10 @@
 // sport_racing_motor=motor
 + sport_racing_motormotor
 - OpenStreetMap tag sport_racing_motor=motor def. Desportos = Desporto motorizados
+
+// sport_racing_motor=speedway
++ sport_racing_motorspeedway
+- OpenStreetMap tag sport_racing_motor=speedway def. Desportos = Speedway
 
 // sport_racing_nonmotor
 + sport_racing_nonmotor
@@ -5523,7 +5605,19 @@
 
 // traffic_calming
 + traffic_calming
-- OpenStreetMap tag traffic_calming=* def. Tipo
+- OpenStreetMap tag traffic_calming=* def. Tipo [=bump (Lomba); =chicane (Chicana rodoviária); =island (Ilha rodoviária)]
+
+// traffic_calming=bump
++ traffic_calmingbump
+- OpenStreetMap tag traffic_calming=bump def. Tipo = Lomba
+
+// traffic_calming=chicane
++ traffic_calmingchicane
+- OpenStreetMap tag traffic_calming=chicane def. Tipo = Chicana rodoviária
+
+// traffic_calming=island
++ traffic_calmingisland
+- OpenStreetMap tag traffic_calming=island def. Tipo = Ilha rodoviária
 
 // traffic_sign
 + traffic_sign
@@ -5771,7 +5865,35 @@
 
 // utility
 + utility
-- OpenStreetMap tag utility=* def. Utilitário
+- OpenStreetMap tag utility=* def. Utilitário [=gas (Gás); =oil (Petróleo); =power (Energia elétrica); =sewerage (Águas residuais); =street_lighting (Iluminação pública); =telecom (Telecomunicações); =water (Água)]
+
+// utility=gas
++ utilitygas
+- OpenStreetMap tag utility=gas def. Utilitário = Gás
+
+// utility=oil
++ utilityoil
+- OpenStreetMap tag utility=oil def. Utilitário = Petróleo
+
+// utility=power
++ utilitypower
+- OpenStreetMap tag utility=power def. Utilitário = Energia elétrica
+
+// utility=sewerage
++ utilitysewerage
+- OpenStreetMap tag utility=sewerage def. Utilitário = Águas residuais
+
+// utility=street_lighting
++ utilitystreet_lighting
+- OpenStreetMap tag utility=street_lighting def. Utilitário = Iluminação pública
+
+// utility=telecom
++ utilitytelecom
+- OpenStreetMap tag utility=telecom def. Utilitário = Telecomunicações
+
+// utility=water
++ utilitywater
+- OpenStreetMap tag utility=water def. Utilitário = Água
 
 // utility_semi
 + utility_semi
@@ -5897,10 +6019,6 @@
 + voltagetertiary
 - OpenStreetMap tag voltage/tertiary=* def. Voltagem terciária
 
-// voltage_electrified
-+ voltage_electrified
-- OpenStreetMap tag voltage_electrified=* def. Voltagem
-
 // wall
 + wall
 - OpenStreetMap tag wall=* def. Tipo
@@ -5919,7 +6037,27 @@
 
 // water_source
 + water_source
-- OpenStreetMap tag water_source=* def. Origem da água
+- OpenStreetMap tag water_source=* def. Origem da água [=main (Rede de canalização); =pond (Lagoa); =river (Rio); =stream (Ribeiro); =water_tank (Depósito de água)]
+
+// water_source=main
++ water_sourcemain
+- OpenStreetMap tag water_source=main def. Origem da água = Rede de canalização
+
+// water_source=pond
++ water_sourcepond
+- OpenStreetMap tag water_source=pond def. Origem da água = Lagoa
+
+// water_source=river
++ water_sourceriver
+- OpenStreetMap tag water_source=river def. Origem da água = Rio
+
+// water_source=stream
++ water_sourcestream
+- OpenStreetMap tag water_source=stream def. Origem da água = Ribeiro
+
+// water_source=water_tank
++ water_sourcewater_tank
+- OpenStreetMap tag water_source=water_tank def. Origem da água = Depósito de água
 
 // water_tank/volume
 + water_tankvolume
@@ -6438,6 +6576,10 @@
 // amenity/fast_food/burger
 + amenityfast_foodburger
 - OpenStreetMap preset amenity/fast_food/burger def. Hamburgueria
+
+// amenity/fast_food/cafeteria
++ amenityfast_foodcafeteria
+- OpenStreetMap preset amenity/fast_food/cafeteria def. Cantina
 
 // amenity/fast_food/chicken
 + amenityfast_foodchicken
@@ -8027,6 +8169,10 @@
 + emergencysiren
 - OpenStreetMap preset emergency/siren def. Sirene
 
+// emergency/water_reservoir
++ emergencywater_reservoir
+- OpenStreetMap preset emergency/water_reservoir def. Reservatório de água de emergência
+
 // emergency/water_reservoir_covered
 + emergencywater_reservoir_covered
 - OpenStreetMap preset emergency/water_reservoir_covered def. Reservatório de água de emergência (subterrâneo)
@@ -8186,6 +8332,10 @@
 // healthcare/speech_therapist
 + healthcarespeech_therapist
 - OpenStreetMap preset healthcare/speech_therapist def. Terapeuta da fala
+
+// healthcare/yes
++ healthcareyes
+- OpenStreetMap preset healthcare/yes def. Não especificado
 
 // highway
 + highway
@@ -8873,7 +9023,7 @@
 
 // leisure/dog_park
 + leisuredog_park
-- OpenStreetMap preset leisure/dog_park def. Parque para cães
+- OpenStreetMap preset leisure/dog_park def. Parque canino
 
 // leisure/escape_game
 + leisureescape_game
@@ -9183,6 +9333,10 @@
 + leisuresports_centreclimbing
 - OpenStreetMap preset leisure/sports_centre/climbing def. Local de escalada
 
+// leisure/sports_centre/horse_racing
++ leisuresports_centrehorse_racing
+- OpenStreetMap preset leisure/sports_centre/horse_racing def. Hipódromo
+
 // leisure/sports_centre/shooting
 + leisuresports_centreshooting
 - OpenStreetMap preset leisure/sports_centre/shooting def. Centro desportivo de tiro ao alvo
@@ -9298,6 +9452,10 @@
 // man_made/crane/gantry_crane
 + man_madecranegantry_crane
 - OpenStreetMap preset man_made/crane/gantry_crane def. Pórtico rolante
+
+// man_made/crane/portal_crane
++ man_madecraneportal_crane
+- OpenStreetMap preset man_made/crane/portal_crane def. Grua de ponte rolante
 
 // man_made/cross
 + man_madecross
@@ -9927,6 +10085,10 @@
 + officegovernmenttax
 - OpenStreetMap preset office/government/tax def. Repartição de finanças
 
+// office/graphic_design
++ officegraphic_design
+- OpenStreetMap preset office/graphic_design def. Empresa de design gráfico
+
 // office/guide
 + officeguide
 - OpenStreetMap preset office/guide def. Guia turístico
@@ -10022,6 +10184,18 @@
 // office/yes
 + officeyes
 - OpenStreetMap preset office/yes def. Escritório
+
+// pipeline
++ pipeline
+- OpenStreetMap preset pipeline def. Elemento de conduta
+
+// pipeline/substation
++ pipelinesubstation
+- OpenStreetMap preset pipeline/substation def. Subestação de conduta
+
+// pipeline/valve
++ pipelinevalve
+- OpenStreetMap preset pipeline/valve def. Válvula de conduta
 
 // piste/downhill
 + pistedownhill
@@ -10350,6 +10524,10 @@
 // power/pole
 + powerpole
 - OpenStreetMap preset power/pole def. Poste de eletricidade
+
+// power/portal
++ powerportal
+- OpenStreetMap preset power/portal def. Pórtico
 
 // power/substation
 + powersubstation
@@ -11646,6 +11824,10 @@
 // traffic_sign/maxspeed
 + traffic_signmaxspeed
 - OpenStreetMap preset traffic_sign/maxspeed def. Sinal de limite de velocidade
+
+// traffic_sign/variable_message
++ traffic_signvariable_message
+- OpenStreetMap preset traffic_sign/variable_message def. Painel de mensagem variável
 
 // type/boundary
 + typeboundary

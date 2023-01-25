@@ -291,6 +291,10 @@
 + acessoriosdemoda
 - OpenStreetMap tag index [ shop/fashion_accessories ]
 
+// acidentes
++ acidentes
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
+
 // acompanhamento
 + acompanhamento
 - OpenStreetMap tag index [ healthcare/counselling ]
@@ -783,9 +787,17 @@
 + alteracao
 - OpenStreetMap tag index [ highway/construction ]
 
+// alternado
++ alternado
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
+
 // alternativa
 + alternativa
 - OpenStreetMap tag index [ healthcare/alternative ]
+
+// alternável
++ alternavel
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
 
 // altifalantes
 + altifalantes
@@ -793,7 +805,7 @@
 
 // altitude
 + altitude
-- OpenStreetMap tag index [ ascent ; ele ; ele_node ; heighthub ]
+- OpenStreetMap tag index [ ascent ; ele ; heighthub ]
 
 // altitudemáxima
 + altitudemaxima
@@ -805,7 +817,7 @@
 
 // altura
 + altura
-- OpenStreetMap tag index [ ascent ; circumference ; ele ; ele_node ; height ; height_building ; barrier/height_restrictor ]
+- OpenStreetMap tag index [ ascent ; circumference ; ele ; height ; height_building ; barrier/height_restrictor ]
 
 // alturamáxima
 + alturamaxima
@@ -970,6 +982,10 @@
 // anabranch
 + anabranch
 - OpenStreetMap tag index [ natural/water/oxbow ]
+
+// anchorgantry
++ anchorgantry
+- OpenStreetMap tag index [ power/portal ]
 
 // ancoradouro
 + ancoradouro
@@ -1211,6 +1227,10 @@
 + apoios
 - OpenStreetMap tag index [ bridge/support ]
 
+// apostas
++ apostas
+- OpenStreetMap tag index [ leisure/sports_centre/horse_racing ]
+
 // apostasdesportivas
 + apostasdesportivas
 - OpenStreetMap tag index [ shop/bookmaker ]
@@ -1237,7 +1257,7 @@
 
 // aquecer
 + aquecer
-- OpenStreetMap tag index [ craft/hvac ]
+- OpenStreetMap tag index [ craft/hvac ; shop/fireplace ]
 
 // aquecimento
 + aquecimento
@@ -1933,7 +1953,7 @@
 
 // aviso
 + aviso
-- OpenStreetMap tag index [ emergency/siren ]
+- OpenStreetMap tag index [ emergency/siren ; traffic_sign/variable_message ]
 
 // avião
 + aviao
@@ -2013,7 +2033,7 @@
 
 // bacia
 + bacia
-- OpenStreetMap tag index [ natural/water/basin ; natural/water/lake ; type/waterway ]
+- OpenStreetMap tag index [ emergency/water_reservoir ; natural/water/basin ; natural/water/lake ; type/waterway ]
 
 // baciaartificial
 + baciaartificial
@@ -3073,7 +3093,7 @@
 
 // bombeiros
 + bombeiros
-- OpenStreetMap tag index [ amenity/fire_station ; building/fire_station ]
+- OpenStreetMap tag index [ amenity/fire_station ; building/fire_station ; emergency/water_reservoir ]
 
 // bombeirosvoluntários
 + bombeirosvoluntarios
@@ -3673,7 +3693,7 @@
 
 // cafeteria
 + cafeteria
-- OpenStreetMap tag index [ amenity/cafe ]
+- OpenStreetMap tag index [ amenity/cafe ; amenity/fast_food/cafeteria ]
 
 // caffe
 + caffe
@@ -4069,7 +4089,7 @@
 
 // canalização
 + canalizacao
-- OpenStreetMap tag index [ craft/plumber ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/water ; man_made/pipeline ; man_made/pipeline/underground ; type/route/pipeline ]
+- OpenStreetMap tag index [ craft/plumber ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/water ; man_made/pipeline ; man_made/pipeline/underground ; pipeline/substation ; pipeline/valve ; type/route/pipeline ]
 
 // canallock
 + canallock
@@ -4135,6 +4155,10 @@
 + cannabis
 - OpenStreetMap tag index [ shop/cannabis ]
 
+// cano
++ cano
+- OpenStreetMap tag index [ pipeline/substation ; pipeline/valve ]
+
 // canola
 + canola
 - OpenStreetMap tag index [ man_made/silo ]
@@ -4146,6 +4170,10 @@
 // cantar
 + cantar
 - OpenStreetMap tag index [ amenity/karaoke_box ]
+
+// canteen
++ canteen
+- OpenStreetMap tag index [ amenity/fast_food/cafeteria ]
 
 // canteira
 + canteira
@@ -4525,7 +4553,7 @@
 
 // casa
 + casa
-- OpenStreetMap tag index [ building ; building_area ; building/boathouse ; building/house ; building/semidetached_house ; office/estate_agent ; place/isolated_dwelling ; shop/household_linen ]
+- OpenStreetMap tag index [ building ; building/boathouse ; building/house ; building/semidetached_house ; office/estate_agent ; place/isolated_dwelling ; shop/household_linen ]
 
 // casabarco
 + casabarco
@@ -4805,11 +4833,11 @@
 
 // cavalo
 + cavalo
-- OpenStreetMap tag index [ amenity/animal_breeding ; attraction/kiddie_ride ; barrier/cattle_grid ; building/stable ; piste/piste ; playground/springy ; shop/country_store ; tourism/trail_riding_station ]
+- OpenStreetMap tag index [ amenity/animal_breeding ; attraction/kiddie_ride ; barrier/cattle_grid ; building/stable ; leisure/sports_centre/horse_racing ; piste/piste ; playground/springy ; shop/country_store ; tourism/trail_riding_station ]
 
 // cavalos
 + cavalos
-- OpenStreetMap tag index [ horse_scale ; amenity/animal_breeding ; building/stable ; highway/path ; highway/path/informal ; leisure/horse_riding ; leisure/pitch/equestrian ; leisure/track ; piste/sleigh ; shop/country_store ; type/route/horse ]
+- OpenStreetMap tag index [ horse_scale ; amenity/animal_breeding ; building/stable ; highway/path ; highway/path/informal ; leisure/horse_riding ; leisure/pitch/equestrian ; leisure/sports_centre/horse_racing ; leisure/track ; piste/sleigh ; shop/country_store ; type/route/horse ]
 
 // cave
 + cave
@@ -5445,7 +5473,7 @@
 
 // ciclo
 + ciclo
-- OpenStreetMap tag index [ leaf_cycle ; leaf_cycle_singular ; leaf_type_singular ]
+- OpenStreetMap tag index [ leaf_cycle ; leaf_type_singular ]
 
 // ciclomotora
 + ciclomotora
@@ -5699,17 +5727,13 @@
 + cobertas
 - OpenStreetMap tag index [ shop/household_linen ]
 
-// coberto
-+ coberto
-- OpenStreetMap tag index [ covered_no ]
-
 // cobertores
 + cobertores
 - OpenStreetMap tag index [ shop/household_linen ]
 
 // cobertura
 + cobertura
-- OpenStreetMap tag index [ covered ; covered_no ; amenity/shelter/picnic_shelter ; amenity/shelter/public_transport ]
+- OpenStreetMap tag index [ covered ; amenity/shelter/picnic_shelter ; amenity/shelter/public_transport ]
 
 // coberturadepiquenique
 + coberturadepiquenique
@@ -6035,6 +6059,10 @@
 + compass
 - OpenStreetMap tag index [ man_made/compass_rose ]
 
+// competição
++ competicao
+- OpenStreetMap tag index [ traffic_calming ]
+
 // complexo
 + complexo
 - OpenStreetMap tag index [ man_made/mast/lighting ]
@@ -6159,13 +6187,17 @@
 + conduta
 - OpenStreetMap tag index [ man_made/pipeline ; man_made/pipeline/underground ]
 
+// conduto
++ conduto
+- OpenStreetMap tag index [ pipeline/substation ; pipeline/valve ]
+
 // conduzir
 + conduzir
 - OpenStreetMap tag index [ license_classes ; amenity/driver_training ]
 
 // condução
 + conducao
-- OpenStreetMap tag index [ license_classes ; amenity/driver_training ; amenity/driving_school ]
+- OpenStreetMap tag index [ license_classes ; amenity/driver_training ; amenity/driving_school ; pipeline/substation ; pipeline/valve ]
 
 // conectar
 + conectar
@@ -6285,7 +6317,7 @@
 
 // construção
 + construcao
-- OpenStreetMap tag index [ building_area ; building/construction ; building/synagogue ; craft/clockmaker ; landuse/brownfield ; shop/tool_hire ; shop/trade ; waterway/boatyard ; waterway/dock ]
+- OpenStreetMap tag index [ building/construction ; building/synagogue ; craft/clockmaker ; landuse/brownfield ; shop/tool_hire ; shop/trade ; waterway/boatyard ; waterway/dock ]
 
 // construçãocivil
 + construcaocivil
@@ -6297,7 +6329,7 @@
 
 // construções
 + construcoes
-- OpenStreetMap tag index [ building_area ; landuse/railway ]
+- OpenStreetMap tag index [ landuse/railway ]
 
 // construída
 + construida
@@ -6545,7 +6577,7 @@
 
 // corrente
 + corrente
-- OpenStreetMap tag index [ natural/water/river ; natural/water/stream ]
+- OpenStreetMap tag index [ natural/water/river ; natural/water/stream ; power/portal ]
 
 // correntemetálica
 + correntemetalica
@@ -6585,7 +6617,7 @@
 
 // corridas
 + corridas
-- OpenStreetMap tag index [ highway/raceway ; leisure/track/running ]
+- OpenStreetMap tag index [ highway/raceway ; leisure/sports_centre/horse_racing ; leisure/track/running ]
 
 // corridasdecavalos
 + corridasdecavalos
@@ -6761,7 +6793,7 @@
 
 // crane
 + crane
-- OpenStreetMap tag index [ man_made/crane/gantry_crane ]
+- OpenStreetMap tag index [ man_made/crane/gantry_crane ; man_made/crane/portal_crane ]
 
 // cratera
 + cratera
@@ -7073,11 +7105,11 @@
 
 // cães
 + caes
-- OpenStreetMap tag index [ amenity/animal_boarding ; amenity/animal_breeding ; amenity/waste/dog_excrement ; highway/path/informal ; shop/pet ; shop/pet_grooming ]
+- OpenStreetMap tag index [ amenity/animal_boarding ; amenity/animal_breeding ; amenity/waste/dog_excrement ; highway/path/informal ; leisure/dog_park ; shop/pet ; shop/pet_grooming ]
 
 // cão
 + cao
-- OpenStreetMap tag index [ amenity/animal_boarding ; amenity/animal_breeding ; amenity/waste/dog_excrement ; shop/pet_grooming ]
+- OpenStreetMap tag index [ amenity/animal_boarding ; amenity/animal_breeding ; amenity/waste/dog_excrement ; leisure/dog_park ; shop/pet_grooming ]
 
 // céu
 + ceu
@@ -7451,6 +7483,14 @@
 + designacaoerrada
 - OpenStreetMap tag index [ notname ]
 
+// designer
++ designer
+- OpenStreetMap tag index [ office/graphic_design ]
+
+// designergráfico
++ designergrafico
+- OpenStreetMap tag index [ office/graphic_design ]
+
 // deslizar
 + deslizar
 - OpenStreetMap tag index [ playground/sledding ]
@@ -7497,7 +7537,7 @@
 
 // desporto
 + desporto
-- OpenStreetMap tag index [ sport_pub ; club/sport ; disc_golf/basket ; disc_golf/hole ; disc_golf/tee ; landuse/recreation_ground ; leisure/bowling_alley ; leisure/disc_golf_course ; leisure/fitness_station ; leisure/fitness_station/horizontal_bar ; leisure/fitness_station/horizontal_ladder ; leisure/fitness_station/hyperextension ; leisure/fitness_station/parallel_bars ; leisure/fitness_station/push-up ; leisure/fitness_station/rings ; leisure/fitness_station/sign ; leisure/fitness_station/sit-up ; leisure/fitness_station/stairs ; leisure/pitch/american_football ; leisure/pitch/american_handball ; leisure/pitch/archery ; leisure/pitch/australian_football ; leisure/pitch/badminton ; leisure/pitch/baseball ; leisure/pitch/basketball ; leisure/pitch/beachvolleyball ; leisure/pitch/boules ; leisure/pitch/bowls ; leisure/pitch/cricket ; leisure/pitch/four_square ; leisure/pitch/funnel_ball ; leisure/pitch/futsal ; leisure/pitch/gaga ; leisure/pitch/handball ; leisure/pitch/netball ; leisure/pitch/padel ; leisure/pitch/paintball ; leisure/pitch/pickleball ; leisure/pitch/rugby_league ; leisure/pitch/rugby_union ; leisure/pitch/shuffleboard ; leisure/pitch/soccer ; leisure/pitch/softball ; leisure/pitch/table_tennis ; leisure/pitch/tennis ; leisure/pitch/tetherball ; leisure/pitch/volleyball ; leisure/sports_centre ; leisure/sports_centre/swimming ; leisure/sports_hall ; leisure/stadium ; leisure/track ; leisure/track/cycling ; leisure/track/running ; leisure/trampoline_park ; playground/funnel_ball ; playground/hopscotch ; shop/scuba_diving ; shop/sports ]
+- OpenStreetMap tag index [ sport_pub ; traffic_calming ; club/sport ; disc_golf/basket ; disc_golf/hole ; disc_golf/tee ; landuse/recreation_ground ; leisure/bowling_alley ; leisure/disc_golf_course ; leisure/fitness_station ; leisure/fitness_station/horizontal_bar ; leisure/fitness_station/horizontal_ladder ; leisure/fitness_station/hyperextension ; leisure/fitness_station/parallel_bars ; leisure/fitness_station/push-up ; leisure/fitness_station/rings ; leisure/fitness_station/sign ; leisure/fitness_station/sit-up ; leisure/fitness_station/stairs ; leisure/pitch/american_football ; leisure/pitch/american_handball ; leisure/pitch/archery ; leisure/pitch/australian_football ; leisure/pitch/badminton ; leisure/pitch/baseball ; leisure/pitch/basketball ; leisure/pitch/beachvolleyball ; leisure/pitch/boules ; leisure/pitch/bowls ; leisure/pitch/cricket ; leisure/pitch/four_square ; leisure/pitch/funnel_ball ; leisure/pitch/futsal ; leisure/pitch/gaga ; leisure/pitch/handball ; leisure/pitch/netball ; leisure/pitch/padel ; leisure/pitch/paintball ; leisure/pitch/pickleball ; leisure/pitch/rugby_league ; leisure/pitch/rugby_union ; leisure/pitch/shuffleboard ; leisure/pitch/soccer ; leisure/pitch/softball ; leisure/pitch/table_tennis ; leisure/pitch/tennis ; leisure/pitch/tetherball ; leisure/pitch/volleyball ; leisure/sports_centre ; leisure/sports_centre/swimming ; leisure/sports_hall ; leisure/stadium ; leisure/track ; leisure/track/cycling ; leisure/track/running ; leisure/trampoline_park ; playground/funnel_ball ; playground/hopscotch ; shop/scuba_diving ; shop/sports ]
 
 // desportodeinverno
 + desportodeinverno
@@ -7541,7 +7581,7 @@
 
 // destinos
 + destinos
-- OpenStreetMap tag index [ destinationsymbol_oneway ; tourism/information/guidepost ]
+- OpenStreetMap tag index [ tourism/information/guidepost ]
 
 // destroço
 + destroco
@@ -7594,10 +7634,6 @@
 // dietas
 + dietas
 - OpenStreetMap tag index [ diet_multi ]
-
-// diferençadepotencial
-+ diferencadepotencial
-- OpenStreetMap tag index [ voltage_electrified ]
 
 // dificuldade
 + dificuldade
@@ -8053,11 +8089,11 @@
 
 // edificação
 + edificacao
-- OpenStreetMap tag index [ building ; building_area ; building/apartments ; historic/castle ]
+- OpenStreetMap tag index [ building ; building/apartments ; historic/castle ]
 
 // edifício
 + edificio
-- OpenStreetMap tag index [ building_area ; building ; building/apartments ; building/barn ; building/boathouse ; building/bungalow ; building/cabin ; building/cathedral ; building/chapel ; building/church ; building/cowshed ; building/detached ; building/dormitory ; building/hangar ; building/house ; building/kindergarten ; building/semidetached_house ; building/service ; building/shed ; building/stable ; building/static_caravan ; building/temple ; building/terrace ; building/university ; leisure/bandstand ; leisure/stadium ; man_made/gasometer ; man_made/lighthouse ; man_made/silo ]
+- OpenStreetMap tag index [ building ; building/apartments ; building/barn ; building/boathouse ; building/bungalow ; building/cabin ; building/cathedral ; building/chapel ; building/church ; building/cowshed ; building/detached ; building/dormitory ; building/hangar ; building/house ; building/kindergarten ; building/semidetached_house ; building/service ; building/shed ; building/stable ; building/static_caravan ; building/temple ; building/terrace ; building/university ; leisure/bandstand ; leisure/stadium ; man_made/gasometer ; man_made/lighthouse ; man_made/silo ]
 
 // edifícioantigo
 + edificioantigo
@@ -8161,7 +8197,7 @@
 
 // eletricidade
 + eletricidade
-- OpenStreetMap tag index [ power_supply ; windingsauto ; craft/electrician ; man_made/manhole/power ; marker/utility ; marker/utility/power ; office/energy_supplier ; power/cable/underground ; power/catenary_mast ; power/line ; power/minor_line ; power/plant ; power/plant/source/coal ; power/plant/source/gas ; power/plant/source/hydro ; power/plant/source/method/photovoltaic ; power/plant/source/nuclear ; power/plant/source/oil ; power/plant/source/solar ; power/plant/source/waste ; power/plant/source/wind ; power/substation ; power/switch ; power/tower ; power/transformer ; public_transport/station_trolleybus ; public_transport/stop_position_trolleybus ; railway/tram ; shop/electrical ; type/route/power ; type/route/tram ]
+- OpenStreetMap tag index [ power_supply ; windingsauto ; craft/electrician ; man_made/manhole/power ; marker/utility ; marker/utility/power ; office/energy_supplier ; power/cable/underground ; power/catenary_mast ; power/line ; power/minor_line ; power/plant ; power/plant/source/coal ; power/plant/source/gas ; power/plant/source/hydro ; power/plant/source/method/photovoltaic ; power/plant/source/nuclear ; power/plant/source/oil ; power/plant/source/solar ; power/plant/source/waste ; power/plant/source/wind ; power/portal ; power/substation ; power/switch ; power/tower ; power/transformer ; public_transport/station_trolleybus ; public_transport/stop_position_trolleybus ; railway/tram ; shop/electrical ; type/route/power ; type/route/tram ]
 
 // eletrificação
 + eletrificacao
@@ -8213,7 +8249,7 @@
 
 // elevação
 + elevacao
-- OpenStreetMap tag index [ ele ; ele_node ; man_made/crane ; man_made/embankment ]
+- OpenStreetMap tag index [ ele ; man_made/crane ; man_made/embankment ]
 
 // elevações
 + elevacoes
@@ -8237,7 +8273,7 @@
 
 // elétrica
 + eletrica
-- OpenStreetMap tag index [ man_made/tower/cooling ; power/catenary_mast ; power/plant ; power/plant/source/coal ; power/plant/source/gas ; power/plant/source/hydro ; power/plant/source/method/photovoltaic ; power/plant/source/nuclear ; power/plant/source/solar ; power/plant/source/waste ; power/plant/source/wind ]
+- OpenStreetMap tag index [ man_made/tower/cooling ; power/catenary_mast ; power/plant ; power/plant/source/coal ; power/plant/source/gas ; power/plant/source/hydro ; power/plant/source/method/photovoltaic ; power/plant/source/nuclear ; power/plant/source/solar ; power/plant/source/waste ; power/plant/source/wind ; power/portal ]
 
 // elétricas
 + eletricas
@@ -8245,7 +8281,7 @@
 
 // elétrico
 + eletrico
-- OpenStreetMap tag index [ man_made/manhole/power ; power/cable/underground ; power/catenary_mast ; power/minor_line ; public_transport/platform/tram ; public_transport/platform/tram_point ; public_transport/station_tram ; public_transport/station_trolleybus ; public_transport/stop_position ; public_transport/stop_position_tram ; public_transport/stop_position_trolleybus ; railway/tram ; railway/tram_crossing ; railway/tram_level_crossing ; type/route/light_rail ; type/route/tram ]
+- OpenStreetMap tag index [ man_made/manhole/power ; power/cable/underground ; power/catenary_mast ; power/minor_line ; power/portal ; public_transport/platform/tram ; public_transport/platform/tram_point ; public_transport/station_tram ; public_transport/station_trolleybus ; public_transport/stop_position ; public_transport/stop_position_tram ; public_transport/stop_position_trolleybus ; railway/tram ; railway/tram_crossing ; railway/tram_level_crossing ; type/route/light_rail ; type/route/tram ]
 
 // elétricos
 + eletricos
@@ -8657,11 +8693,15 @@
 
 // equestre
 + equestre
-- OpenStreetMap tag index [ horse_scale ; leisure/horse_riding ; leisure/pitch/equestrian ; leisure/track/horse_racing ; shop/country_store ; tourism/trail_riding_station ; type/route/horse ]
+- OpenStreetMap tag index [ horse_scale ; leisure/horse_riding ; leisure/pitch/equestrian ; leisure/sports_centre/horse_racing ; leisure/track/horse_racing ; shop/country_store ; tourism/trail_riding_station ; type/route/horse ]
 
 // equilíbrio
 + equilibrio
 - OpenStreetMap tag index [ leisure/fitness_station/balance_beam ]
+
+// equino
++ equino
+- OpenStreetMap tag index [ leisure/sports_centre/horse_racing ]
 
 // equinos
 + equinos
@@ -9005,7 +9045,7 @@
 
 // esgotos
 + esgotos
-- OpenStreetMap tag index [ amenity/sanitary_dump_station ; man_made/manhole ; man_made/pumping_station ; man_made/wastewater_plant ; marker/utility ; natural/water/wastewater ]
+- OpenStreetMap tag index [ amenity/sanitary_dump_station ; man_made/manhole ; man_made/pumping_station ; man_made/wastewater_plant ; marker/utility ; natural/water/wastewater ; pipeline/valve ]
 
 // eskrima
 + eskrima
@@ -9265,7 +9305,7 @@
 
 // estação
 + estacao
-- OpenStreetMap tag index [ amenity/vending_machine/fuel ; building/transportation ; emergency/lifeboat_station ; man_made/monitoring_station ; power/plant/source/wind ; public_transport/station_bus ; public_transport/station_light_rail ; public_transport/station_monorail ; public_transport/station_subway ; public_transport/station_train ; public_transport/station_train_halt ; public_transport/station_trolleybus ; type/public_transport/stop_area_group ]
+- OpenStreetMap tag index [ amenity/vending_machine/fuel ; building/transportation ; emergency/lifeboat_station ; man_made/monitoring_station ; power/plant/source/wind ; power/portal ; public_transport/station_bus ; public_transport/station_light_rail ; public_transport/station_monorail ; public_transport/station_subway ; public_transport/station_train ; public_transport/station_train_halt ; public_transport/station_trolleybus ; type/public_transport/stop_area_group ]
 
 // estaçãodecaminhosdeferro
 + estacaodecaminhosdeferro
@@ -9453,7 +9493,7 @@
 
 // estrada
 + estrada
-- OpenStreetMap tag index [ lane_markings ; golf/cartpath ; highway/construction ; highway/living_street ; highway/mini_roundabout ; highway/motorway_junction ; highway/service/parking_aisle ; man_made/bridge ; man_made/manhole ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/telecom ; man_made/manhole/water ; traffic_calming/choker ; traffic_calming/cushion ; traffic_calming/dip ; traffic_calming/hump ; traffic_calming/rumble_strip ; traffic_calming/table ; traffic_sign/maxspeed ; type/route/detour ; type/route/road ]
+- OpenStreetMap tag index [ lane_markings ; golf/cartpath ; highway/construction ; highway/living_street ; highway/mini_roundabout ; highway/motorway_junction ; highway/service/parking_aisle ; man_made/bridge ; man_made/manhole ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/telecom ; man_made/manhole/water ; traffic_calming/choker ; traffic_calming/cushion ; traffic_calming/dip ; traffic_calming/hump ; traffic_calming/rumble_strip ; traffic_calming/table ; traffic_sign/maxspeed ; traffic_sign/variable_message ; type/route/detour ; type/route/road ]
 
 // estradadeferro
 + estradadeferro
@@ -10199,6 +10239,10 @@
 + firehose
 - OpenStreetMap tag index [ emergency/fire_hose ]
 
+// fireplace
++ fireplace
+- OpenStreetMap tag index [ shop/fireplace ]
+
 // fireworksstore
 + fireworksstore
 - OpenStreetMap tag index [ shop/pyrotechnics ]
@@ -10311,9 +10355,13 @@
 + florestagerida
 - OpenStreetMap tag index [ landuse/forest ]
 
+// florestais
++ florestais
+- OpenStreetMap tag index [ emergency/water_reservoir ]
+
 // florestal
 + florestal
-- OpenStreetMap tag index [ natural/wood ; office/forestry ]
+- OpenStreetMap tag index [ emergency/water_reservoir ; natural/wood ; office/forestry ]
 
 // florestasustentável
 + florestasustentavel
@@ -10351,6 +10399,10 @@
 + fm
 - OpenStreetMap tag index [ amenity/studio/radio ; man_made/mast/communication/radio ]
 
+// fogao
++ fogao
+- OpenStreetMap tag index [ shop/fireplace ]
+
 // fogo
 + fogo
 - OpenStreetMap tag index [ openfire ; real_firegbie ; building/fire_station ; emergency/fire_alarm ; emergency/fire_extinguisher ; emergency/fire_hydrant ; leisure/firepit ; shop/fireplace ]
@@ -10359,9 +10411,13 @@
 + fogodeartificio
 - OpenStreetMap tag index [ shop/pyrotechnics ]
 
+// fogoes
++ fogoes
+- OpenStreetMap tag index [ shop/fireplace ]
+
 // fogos
 + fogos
-- OpenStreetMap tag index [ man_made/tower/observation ]
+- OpenStreetMap tag index [ emergency/water_reservoir ; man_made/tower/observation ]
 
 // fogueira
 + fogueira
@@ -10385,7 +10441,7 @@
 
 // folhas
 + folhas
-- OpenStreetMap tag index [ leaf_cycle ; leaf_cycle_singular ; leaf_type ; leaf_type_singular ]
+- OpenStreetMap tag index [ leaf_cycle ; leaf_type ; leaf_type_singular ]
 
 // fome
 + fome
@@ -10665,7 +10721,7 @@
 
 // frequências
 + frequencias
-- OpenStreetMap tag index [ frequency ; frequency_electrified ]
+- OpenStreetMap tag index [ frequency ]
 
 // fresco
 + fresco
@@ -10859,6 +10915,10 @@
 + gabinete
 - OpenStreetMap tag index [ man_made/street_cabinet ; office/bail_bond_agent-US-PH ]
 
+// gabinetededesigngráfico
++ gabinetededesigngrafico
+- OpenStreetMap tag index [ office/graphic_design ]
+
 // gabinetedeligação
 + gabinetedeligacao
 - OpenStreetMap tag index [ office/diplomatic/liaison ]
@@ -10917,7 +10977,7 @@
 
 // gantry
 + gantry
-- OpenStreetMap tag index [ man_made/crane/gantry_crane ]
+- OpenStreetMap tag index [ man_made/crane/gantry_crane ; man_made/crane/portal_crane ; power/portal ]
 
 // ganza
 + ganza
@@ -10985,7 +11045,7 @@
 
 // gasoduto
 + gasoduto
-- OpenStreetMap tag index [ man_made/pipeline ; man_made/pipeline/underground ; type/route/pipeline ]
+- OpenStreetMap tag index [ man_made/pipeline ; man_made/pipeline/underground ; pipeline/substation ; pipeline/valve ; type/route/pipeline ]
 
 // gasolina
 + gasolina
@@ -11473,7 +11533,7 @@
 
 // grua
 + grua
-- OpenStreetMap tag index [ man_made/crane/gantry_crane ; man_made/gantry ]
+- OpenStreetMap tag index [ man_made/crane/gantry_crane ; man_made/crane/portal_crane ; man_made/gantry ]
 
 // grupo
 + grupo
@@ -11557,7 +11617,7 @@
 
 // guindaste
 + guindaste
-- OpenStreetMap tag index [ man_made/crane ; man_made/crane/gantry_crane ; man_made/gantry ]
+- OpenStreetMap tag index [ man_made/crane ; man_made/crane/gantry_crane ; man_made/crane/portal_crane ; man_made/gantry ]
 
 // guitarra
 + guitarra
@@ -11577,7 +11637,7 @@
 
 // gás
 + gas
-- OpenStreetMap tag index [ man_made/gasometer ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/storage_tank ; man_made/windpump ; office/energy_supplier ; shop/fuel ; shop/gas ]
+- OpenStreetMap tag index [ man_made/gasometer ; man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/storage_tank ; man_made/windpump ; office/energy_supplier ; pipeline/valve ; shop/fuel ; shop/gas ]
 
 // gásnatural
 + gasnatural
@@ -11695,9 +11755,21 @@
 + hearing
 - OpenStreetMap tag index [ shop/hearing_aids ]
 
+// heat
++ heat
+- OpenStreetMap tag index [ shop/fireplace ]
+
+// heater
++ heater
+- OpenStreetMap tag index [ shop/fireplace ]
+
 // heath
 + heath
 - OpenStreetMap tag index [ natural/heath ]
+
+// heating
++ heating
+- OpenStreetMap tag index [ shop/fireplace ]
 
 // hectométrica
 + hectometrica
@@ -11853,7 +11925,7 @@
 
 // hipismo
 + hipismo
-- OpenStreetMap tag index [ highway/path ; leisure/pitch/equestrian ; leisure/track/horse_racing ; shop/country_store ; tourism/trail_riding_station ]
+- OpenStreetMap tag index [ highway/path ; leisure/pitch/equestrian ; leisure/sports_centre/horse_racing ; leisure/track/horse_racing ; shop/country_store ; tourism/trail_riding_station ]
 
 // hipódromo
 + hipodromo
@@ -12219,6 +12291,10 @@
 + iluminacaopublica
 - OpenStreetMap tag index [ highway/street_lamp ]
 
+// ilustração
++ ilustracao
+- OpenStreetMap tag index [ office/graphic_design ]
+
 // imagem
 + imagem
 - OpenStreetMap tag index [ image ]
@@ -12261,11 +12337,11 @@
 
 // imóveis
 + imoveis
-- OpenStreetMap tag index [ building_area ; office/estate_agent ; office/notary ]
+- OpenStreetMap tag index [ office/estate_agent ; office/notary ]
 
 // imóvel
 + imovel
-- OpenStreetMap tag index [ building_area ; office/estate_agent ]
+- OpenStreetMap tag index [ office/estate_agent ]
 
 // imóveldeinteressepúblico
 + imoveldeinteressepublico
@@ -12305,7 +12381,7 @@
 
 // incêndios
 + incendios
-- OpenStreetMap tag index [ building/fire_station ; man_made/cutline ; man_made/tower/observation ]
+- OpenStreetMap tag index [ building/fire_station ; emergency/water_reservoir ; man_made/cutline ; man_made/tower/observation ]
 
 // indiana
 + indiana
@@ -12381,11 +12457,11 @@
 
 // informação
 + informacao
-- OpenStreetMap tag index [ inscription ; advertising/board ; advertising/poster_box ; advertising/totem ; office/it ; tourism/information ; tourism/information/board ]
+- OpenStreetMap tag index [ inscription ; advertising/board ; advertising/poster_box ; advertising/totem ; office/it ; tourism/information ; tourism/information/board ; traffic_sign/variable_message ]
 
 // informações
 + informacoes
-- OpenStreetMap tag index [ inscription ; advertising/totem ; tourism/information/board ; tourism/information/office ]
+- OpenStreetMap tag index [ inscription ; advertising/totem ; tourism/information/board ; tourism/information/office ; traffic_sign/variable_message ]
 
 // informática
 + informatica
@@ -13135,10 +13211,6 @@
 + keycutter
 - OpenStreetMap tag index [ craft/key_cutter ]
 
-// kg
-+ kg
-- OpenStreetMap tag index [ maxweight_bridge ]
-
 // kicker
 + kicker
 - OpenStreetMap tag index [ leisure/pitch/table_soccer ]
@@ -13554,6 +13626,10 @@
 // led
 + led
 - OpenStreetMap tag index [ man_made/video_wall ; shop/electrical ; shop/lighting ]
+
+// leds
++ leds
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
 
 // legação
 + legacao
@@ -14563,6 +14639,14 @@
 + mapillary
 - OpenStreetMap tag index [ mapillary ]
 
+// maquiagem
++ maquiagem
+- OpenStreetMap tag index [ shop/cosmetics ]
+
+// maquilhagem
++ maquilhagem
+- OpenStreetMap tag index [ shop/cosmetics ]
+
 // maquinaria
 + maquinaria
 - OpenStreetMap tag index [ shop/country_store ]
@@ -15525,7 +15609,7 @@
 
 // motas
 + motas
-- OpenStreetMap tag index [ amenity/motorcycle_parking ; amenity/motorcycle_rental ; barrier/motorcycle_barrier ; highway/raceway ; highway/raceway/motocross ; shop/motorcycle_repair ]
+- OpenStreetMap tag index [ traffic_calming ; amenity/motorcycle_parking ; amenity/motorcycle_rental ; barrier/motorcycle_barrier ; highway/raceway ; highway/raceway/motocross ; shop/motorcycle_repair ]
 
 // motel
 + motel
@@ -15553,11 +15637,11 @@
 
 // motocicletas
 + motocicletas
-- OpenStreetMap tag index [ amenity/motorcycle_rental ]
+- OpenStreetMap tag index [ traffic_calming ; amenity/motorcycle_rental ]
 
 // motociclismo
 + motociclismo
-- OpenStreetMap tag index [ highway/raceway ]
+- OpenStreetMap tag index [ traffic_calming ; highway/raceway ]
 
 // motociclos
 + motociclos
@@ -15589,11 +15673,15 @@
 
 // motorizada
 + motorizada
-- OpenStreetMap tag index [ highway/cycleway/moped_link-NL ; shop/motorcycle ; shop/motorcycle_repair ]
+- OpenStreetMap tag index [ traffic_calming ; highway/cycleway/moped_link-NL ; shop/motorcycle ; shop/motorcycle_repair ]
+
+// motorizado
++ motorizado
+- OpenStreetMap tag index [ traffic_calming ]
 
 // motos
 + motos
-- OpenStreetMap tag index [ amenity/motorcycle_rental ; barrier/motorcycle_barrier ; shop/motorcycle ]
+- OpenStreetMap tag index [ traffic_calming ; amenity/motorcycle_rental ; barrier/motorcycle_barrier ; shop/motorcycle ]
 
 // muaythai
 + muaythai
@@ -16453,7 +16541,7 @@
 
 // oleoduto
 + oleoduto
-- OpenStreetMap tag index [ man_made/pipeline ; man_made/pipeline/underground ; type/route/pipeline ]
+- OpenStreetMap tag index [ man_made/pipeline ; man_made/pipeline/underground ; pipeline/substation ; pipeline/valve ; type/route/pipeline ]
 
 // oleão
 + oleao
@@ -16703,6 +16791,10 @@
 + painel
 - OpenStreetMap tag index [ playground/activitypanel ; power/plant/source/method/photovoltaic ; power/plant/source/solar ; tourism/information/board ]
 
+// paineldeavisos
++ paineldeavisos
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
+
 // paineldeinformação
 + paineldeinformacao
 - OpenStreetMap tag index [ tourism/information/terminal ]
@@ -16715,13 +16807,17 @@
 + paineldeinformacaoeletronico
 - OpenStreetMap tag index [ tourism/information/terminal ]
 
+// paineldeleds
++ paineldeleds
+- OpenStreetMap tag index [ traffic_sign/variable_message ]
+
 // paineldigital
 + paineldigital
-- OpenStreetMap tag index [ tourism/information/terminal ]
+- OpenStreetMap tag index [ tourism/information/terminal ; traffic_sign/variable_message ]
 
 // paineleletrónico
 + paineleletronico
-- OpenStreetMap tag index [ tourism/information/terminal ]
+- OpenStreetMap tag index [ tourism/information/terminal ; traffic_sign/variable_message ]
 
 // painelfotovoltaico
 + painelfotovoltaico
@@ -17599,10 +17695,6 @@
 + pesagem
 - OpenStreetMap tag index [ amenity/weighbridge ]
 
-// pesagemmáxima
-+ pesagemmaxima
-- OpenStreetMap tag index [ maxweight_bridge ]
-
 // pesca
 + pesca
 - OpenStreetMap tag index [ landuse/harbour ; shop/country_store ; shop/fishing ]
@@ -17622,10 +17714,6 @@
 // peso
 + peso
 - OpenStreetMap tag index [ shop/nutrition_supplements ]
-
-// pesomáximo
-+ pesomaximo
-- OpenStreetMap tag index [ maxweight_bridge ]
 
 // pesqueiro
 + pesqueiro
@@ -17661,7 +17749,7 @@
 
 // petróleo
 + petroleo
-- OpenStreetMap tag index [ man_made/petroleum_well ; man_made/storage_tank ; man_made/windpump ; shop/fuel ]
+- OpenStreetMap tag index [ man_made/petroleum_well ; man_made/storage_tank ; man_made/windpump ; pipeline/valve ; shop/fuel ]
 
 // petting
 + petting
@@ -17913,7 +18001,7 @@
 
 // pista
 + pista
-- OpenStreetMap tag index [ aeroway/runway ; leisure/pitch/equestrian ; leisure/track ; leisure/track/running ; piste/downhill ; piste/downhill/halfpipe ; piste/hike ; piste/skitour ; piste/sled ]
+- OpenStreetMap tag index [ traffic_calming ; aeroway/runway ; leisure/pitch/equestrian ; leisure/track ; leisure/track/running ; piste/downhill ; piste/downhill/halfpipe ; piste/hike ; piste/skitour ; piste/sled ]
 
 // pistaaérea
 + pistaaerea
@@ -18939,13 +19027,9 @@
 + protegida
 - OpenStreetMap tag index [ leisure/nature_reserve ]
 
-// protegido
-+ protegido
-- OpenStreetMap tag index [ covered_no ]
-
 // proteção
 + protecao
-- OpenStreetMap tag index [ covered ; covered_no ; barrier/fence ; leisure/nature_reserve ; office/security ]
+- OpenStreetMap tag index [ covered ; barrier/fence ; leisure/nature_reserve ; office/security ]
 
 // proteínas
 + proteinas
@@ -18961,7 +19045,7 @@
 
 // prédio
 + predio
-- OpenStreetMap tag index [ building ; building_area ; building/apartments ; historic/building ; landuse/residential/apartments ]
+- OpenStreetMap tag index [ building ; building/apartments ; historic/building ; landuse/residential/apartments ]
 
 // prédiocomercial
 + prediocomercial
@@ -19109,7 +19193,7 @@
 
 // pórtico
 + portico
-- OpenStreetMap tag index [ barrier/toll_booth ; entrance ; highway/toll_gantry ; man_made/crane/gantry_crane ; man_made/gantry ]
+- OpenStreetMap tag index [ barrier/toll_booth ; entrance ; highway/toll_gantry ; man_made/crane/gantry_crane ; man_made/crane/portal_crane ; man_made/gantry ]
 
 // pósvenda
 + posvenda
@@ -19331,6 +19415,14 @@
 + quiropratico
 - OpenStreetMap tag index [ healthcare/alternative/chiropractic ]
 
+// race
++ race
+- OpenStreetMap tag index [ leisure/sports_centre/horse_racing ]
+
+// racing
++ racing
+- OpenStreetMap tag index [ leisure/sports_centre/horse_racing ]
+
 // rack
 + rack
 - OpenStreetMap tag index [ man_made/carpet_hanger ]
@@ -19417,7 +19509,7 @@
 
 // rancho
 + rancho
-- OpenStreetMap tag index [ leisure/horse_riding ]
+- OpenStreetMap tag index [ amenity/fast_food/cafeteria ; leisure/horse_riding ]
 
 // ranger
 + ranger
@@ -19662,6 +19754,14 @@
 // reduçãodevelocidade
 + reducaodevelocidade
 - OpenStreetMap tag index [ traffic_calming ; traffic_calming/bump ; traffic_calming/chicane ; traffic_calming/choker ; traffic_calming/cushion ; traffic_calming/dip ; traffic_calming/hump ; traffic_calming/island ; traffic_calming/rumble_strip ; traffic_calming/table ]
+
+// refectory
++ refectory
+- OpenStreetMap tag index [ amenity/fast_food/cafeteria ]
+
+// refeitório
++ refeitorio
+- OpenStreetMap tag index [ amenity/fast_food/cafeteria ]
 
 // refeição
 + refeicao
@@ -19933,7 +20033,7 @@
 
 // reserva
 + reserva
-- OpenStreetMap tag index [ office/forestry ]
+- OpenStreetMap tag index [ emergency/water_reservoir ; office/forestry ]
 
 // reservas
 + reservas
@@ -19973,11 +20073,11 @@
 
 // residuais
 + residuais
-- OpenStreetMap tag index [ man_made/manhole/drain ; man_made/manhole/sewer ]
+- OpenStreetMap tag index [ man_made/manhole/drain ; man_made/manhole/sewer ; pipeline/valve ]
 
 // residência
 + residencia
-- OpenStreetMap tag index [ building ; building_area ; building/dormitory ; building/house ; building/residential ; building/semidetached_house ; building/terrace ]
+- OpenStreetMap tag index [ building ; building/dormitory ; building/house ; building/residential ; building/semidetached_house ; building/terrace ]
 
 // residênciadeestudantes
 + residenciadeestudantes
@@ -20113,7 +20213,7 @@
 
 // resíduos
 + residuos
-- OpenStreetMap tag index [ amenity/sanitary_dump_station ; man_made/tailings_pond ; man_made/wastewater_plant ]
+- OpenStreetMap tag index [ amenity/sanitary_dump_station ; man_made/tailings_pond ; man_made/wastewater_plant ; pipeline/valve ]
 
 // resíduosbarcos
 + residuosbarcos
@@ -20357,7 +20457,7 @@
 
 // rodovia
 + rodovia
-- OpenStreetMap tag index [ lane_markings ; area/highway ; highway/construction ; highway/motorway_junction ; highway/service ; traffic_calming/cushion ; type/route/road ]
+- OpenStreetMap tag index [ lane_markings ; area/highway ; highway/construction ; highway/motorway_junction ; highway/service ; traffic_calming/cushion ; traffic_sign/variable_message ; type/route/road ]
 
 // rodoviadentrodelocalidades
 + rodoviadentrodelocalidades
@@ -20409,7 +20509,7 @@
 
 // rodoviário
 + rodoviario
-- OpenStreetMap tag index [ lane_markings ; public_transport/station_bus ]
+- OpenStreetMap tag index [ lane_markings ; public_transport/station_bus ; traffic_sign/variable_message ]
 
 // rolante
 + rolante
@@ -21983,6 +22083,10 @@
 + storagetank
 - OpenStreetMap tag index [ man_made/storage_tank ]
 
+// stove
++ stove
+- OpenStreetMap tag index [ shop/fireplace ]
+
 // strait
 + strait
 - OpenStreetMap tag index [ natural/strait ]
@@ -22215,10 +22319,6 @@
 + setimaarte
 - OpenStreetMap tag index [ amenity/studio/video ]
 
-// símbolos
-+ simbolos
-- OpenStreetMap tag index [ destinationsymbol_oneway ]
-
 // sítio
 + sitio
 - OpenStreetMap tag index [ building/farm_auxiliary ; place/locality ]
@@ -22374,10 +22474,6 @@
 // taoismo
 + taoismo
 - OpenStreetMap tag index [ amenity/place_of_worship/taoist ]
-
-// tapado
-+ tapado
-- OpenStreetMap tag index [ covered_no ]
 
 // tapete
 + tapete
@@ -22697,7 +22793,7 @@
 
 // tempo
 + tempo
-- OpenStreetMap tag index [ amenity/clock ; man_made/monitoring_station ]
+- OpenStreetMap tag index [ amenity/clock ; man_made/monitoring_station ; traffic_sign/variable_message ]
 
 // temporarypollingplace
 + temporarypollingplace
@@ -22729,7 +22825,7 @@
 
 // tensão
 + tensao
-- OpenStreetMap tag index [ voltage_electrified ; power/cable/underground ; power/line ; power/minor_line ]
+- OpenStreetMap tag index [ power/cable/underground ; power/line ; power/minor_line ]
 
 // terapeuta
 + terapeuta
@@ -23813,7 +23909,7 @@
 
 // tubagem
 + tubagem
-- OpenStreetMap tag index [ man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/water ; man_made/pipeline ; man_made/pipeline/underground ; marker/utility ; type/route/pipeline ]
+- OpenStreetMap tag index [ man_made/manhole/gas ; man_made/manhole/power ; man_made/manhole/sewer ; man_made/manhole/water ; man_made/pipeline ; man_made/pipeline/underground ; marker/utility ; pipeline/substation ; pipeline/valve ; type/route/pipeline ]
 
 // tube
 + tube
@@ -24743,6 +24839,10 @@
 + vista
 - OpenStreetMap tag index [ amenity/binoculars ; tourism/viewpoint ]
 
+// visual
++ visual
+- OpenStreetMap tag index [ office/graphic_design ]
+
 // visão
 + visao
 - OpenStreetMap tag index [ healthcare/optometrist ]
@@ -24813,7 +24913,7 @@
 
 // voltagem
 + voltagem
-- OpenStreetMap tag index [ voltageprimary ; voltagesecondary ; voltagetertiary ; voltage_electrified ; power/cable/underground ; power/line ; power/minor_line ]
+- OpenStreetMap tag index [ voltageprimary ; voltagesecondary ; voltagetertiary ; power/cable/underground ; power/line ; power/minor_line ; power/portal ]
 
 // volume
 + volume
@@ -25169,7 +25269,7 @@
 
 // água
 + agua
-- OpenStreetMap tag index [ drinking_water_available ; shower ; amenity/dive_centre ; amenity/drinking_water ; amenity/fountain ; amenity/lavoir ; amenity/vending_machine/drinks ; amenity/water_point ; amenity/watering_place ; golf/lateral_water_hazard ; golf/water_hazard ; leisure/park ; leisure/sauna ; leisure/sports_centre/swimming ; leisure/swimming_pool ; leisure/water_park ; man_made/dyke ; man_made/pumping_station ; man_made/storage_tank ; man_made/tower/diving ; man_made/water_well ; marker/utility ; natural/geyser ; natural/spring ; natural/water/canal ; natural/water/lake ; natural/water/reservoir ; natural/water/river ; natural/water/stream ; office/water_utility ; playground/splash_pad ; playground/water ; power/plant/source/hydro ; shop/scuba_diving ; shop/water ; type/waterway ; waterway/canal ; waterway/tidal_channel ; waterway/weir ]
+- OpenStreetMap tag index [ drinking_water_available ; shower ; amenity/dive_centre ; amenity/drinking_water ; amenity/fountain ; amenity/lavoir ; amenity/vending_machine/drinks ; amenity/water_point ; amenity/watering_place ; golf/lateral_water_hazard ; golf/water_hazard ; leisure/park ; leisure/sauna ; leisure/sports_centre/swimming ; leisure/swimming_pool ; leisure/water_park ; man_made/dyke ; man_made/pumping_station ; man_made/storage_tank ; man_made/tower/diving ; man_made/water_well ; marker/utility ; natural/geyser ; natural/spring ; natural/water/canal ; natural/water/lake ; natural/water/reservoir ; natural/water/river ; natural/water/stream ; office/water_utility ; pipeline/valve ; playground/splash_pad ; playground/water ; power/plant/source/hydro ; shop/scuba_diving ; shop/water ; type/waterway ; waterway/canal ; waterway/tidal_channel ; waterway/weir ]
 
 // águadecolónia
 + aguadecolonia
@@ -25387,10 +25487,6 @@
 + eolica
 - OpenStreetMap tag index [ power/generator/source/wind ]
 
-// ícones
-+ icones
-- OpenStreetMap tag index [ destinationsymbol_oneway ]
-
 // óbito
 + obito
 - OpenStreetMap tag index [ office/government/register_office ]
@@ -25406,6 +25502,10 @@
 // óculosdesol
 + oculosdesol
 - OpenStreetMap tag index [ shop/fashion_accessories ; shop/optician ]
+
+// óleo
++ oleo
+- OpenStreetMap tag index [ pipeline/valve ]
 
 // óleos
 + oleos
