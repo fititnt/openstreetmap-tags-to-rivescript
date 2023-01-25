@@ -2,7 +2,7 @@ from rivescript import RiveScript
 
 # bot = RiveScript(utf8=True)
 bot = RiveScript()
-bot.load_directory("./brain")
+bot.load_directory("./example/brain")
 bot.sort_replies()
 
 while True:

@@ -1,22 +1,39 @@
 # openstreetmap-tags-to-rivescript
-**Convert of openstreetmap/id-tagging-schema to RiveScript, the Artificial Intelligence Scripting Language (alternative to AIML)**
+**Convert of openstreetmap/id-tagging-schema to [RiveScript](https://www.rivescript.com/about), the Artificial Intelligence Scripting Language (alternative to AIML)**
+
+[![Pypi: osmtags2rive](https://img.shields.io/badge/python%20pypi-osmtags2rive-brightgreen[Python] "Pypi: osmtags2rive")](https://pypi.org/project/osmtags2rive)
+[![GitHub](https://img.shields.io/badge/GitHub-fititnt%2Fopenstreetmap--tags--to--rivescript-lightgrey?logo=github&style=social[fititnt/openstreetmap-tags-to-rivescript] "GitHub")](https://github.com/fititnt/openstreetmap-tags-to-rivescript)
 
 ## Quickstart
 
 ### Install
 
-No pip release yet, install from GitHub
+<s>No pip release yet, install from GitHub:</s> <s><code>pip install https://github.com/fititnt/openstreetmap-tags-to-rivescript/archive/main.zip</code></s>
+
+Just install via pypi:
 
 ```bash
-pip install https://github.com/fititnt/openstreetmap-tags-to-rivescript/archive/main.zip
+pip install --upgrade osmtags2rive
+
+# To see all options
+osmtags2rive --help
 ```
 
 ### Fetch cache
 
+A copy of <https://github.com/openstreetmap/id-tagging-schema> on local disk is necessary.
+The following example saves on a path that is discovered by the cli tool.
+
 ```bash
 # Prepare the cache directory
 git clone https://github.com/openstreetmap/id-tagging-schema.git ./id-tagging-schema
+```
 
+The exact path can be customized with `--path-id-tagging-schema` option.
+
+### Generate RiveScript
+
+```bash
 osmtags2rive --language=pt > example/brain/osm-tagging_pt.rive
 osmtags2rive --language=pt --reverse-index > example/brain/osm-tagging-reverse_pt.rive
 ```
@@ -28,17 +45,29 @@ osmtags2rive --language=pt > example/brain/osm-tagging_pt.rive
 osmtags2rive --language=pt --reverse-index > example/brain/osm-tagging-reverse_pt.rive
 -->
 
+## Extras
 
-### Test
+### Quickstart on how to use the generated RiveScripts
+
+Check [Rivescript website page for interpreters](https://www.rivescript.com/interpreters) for other programming languages than python or the online playground.
+They all have a similar interface:
+allow you to deposit all files in a directory which is loaded by your interpreter.
+
+#### Online playground
+- https://play.rivescript.com/ <sup>recommended</sup>
+- https://www.rivescript.com/try
+
+Copy and paste the contents of all the files and run it.
 
 #### Python example
-Using Rive Python interpreter (there are other for other programming languages)
-from https://github.com/aichaos/rivescript-python
+Using Rive Python interpreter from https://github.com/aichaos/rivescript-python
 
 ```bash
-# install the script
+# install the rivescript python library
 pip install rivescript
 
+# Run your application.
+# This one is a very simple (no integration with Telegram, Slack, etc) as proof of concept.
 python shell.py
 ```
 
@@ -49,7 +78,7 @@ from rivescript import RiveScript
 
 # bot = RiveScript(utf8=True)
 bot = RiveScript()
-bot.load_directory("./brain")
+bot.load_directory("./example/brain")
 bot.sort_replies()
 
 while True:
@@ -60,6 +89,17 @@ while True:
     reply = bot.reply("localuser", msg)
     print ('Bot>', reply)
 ```
+
+**Example of interaction** (may change)
+```bash
+You> highway=residential 
+Bot> OpenStreetMap preset highway/residential def. Rua residencial
+You> estrada desconhecida
+Bot> [ERR: No Reply Matched]
+You> /quit
+```
+
+> @TODO fix spaces on reverse index; "estrada desconhecida", not only strictly "estradadesconhecida"
 
 
 # Disclaimers
